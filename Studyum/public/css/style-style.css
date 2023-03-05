@@ -1,7 +1,7 @@
 /* Fontes */
 
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap"); /* Raleway - Fonte para títulos */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Raleway:wght@300;400;500;700&display=swap"); /* Montserrat - Fonte para textos*/
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* Raleway - Fonte para títulos */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* Montserrat - Fonte para textos*/
 
 /* Estilo principal */
 
@@ -78,9 +78,11 @@ body {
 }
 
 .about-presentation {
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
-    padding: 75px 55px 75px 55px;
+    padding: 175px 0;
 }
 
 .about-svg {
@@ -89,10 +91,65 @@ body {
 }
 
 .about-text {
-    font-family: "Montserrat", sans-serif;
-    text-align: justify;
-    color: #fff;
-    font-size: 24px;
     display: flex;
     justify-content: center;
+}
+
+.about-text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    text-align: justify;
+    color: #fff;
+    width: 50%;
+    text-shadow: 0px 4px 4px #000;
+}
+
+/* Estilização da segunda seção - Desenvolvedores */
+
+.about-devs-title {
+    display: flex;
+    justify-content: center;
+}
+
+.about-devs-title h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.about-devs-box {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 175px 55px 175px 55px;
+}
+
+.about-devs-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.about-devs-text h3 {
+    font-family: "Raleaway", sans-serif;
+    font-size: 24px;
+    width: 50%;
+}
+
+.about-devs-text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    width: 50%;
+}
+
+/* Estilização do Footer */
+footer {
+    background-color: #eaebed;
+}
+
+.footer-container {
+    display: flex;
+    max-width: 1440px;
+    padding: 175px 55px 175px 55px;
 }
