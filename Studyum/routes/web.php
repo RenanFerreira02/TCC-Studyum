@@ -21,3 +21,6 @@ Route::get('/sobre', function () {
     return view('sobre');
 });
 
+Route::get('/index', function () {
+    return view('index');
+});
