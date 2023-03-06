@@ -1,0 +1,155 @@
+/* Fontes */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* Raleway - Fonte para títulos */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* Montserrat - Fonte para textos*/
+
+/* Estilo principal */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+/* Estilo da Header e da Nav */
+
+.header {
+    margin: 0 auto;
+    max-width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    display: inline;
+}
+
+.home-sobre {
+    text-decoration: none;
+    margin: 0 40px;
+    position: relative;
+    color: #000;
+}
+
+.entrar-cadastrar {
+    text-decoration: none;
+    color: #fff;
+    background-color: #007090;
+    margin: 0 10px;
+    padding: 10px 20px;
+    position: relative;
+    border: none;
+    border-radius: 10px;
+}
+
+.home-sobre:after {
+    content: "";
+    position: absolute;
+    background-color: #007090;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.home-sobre:hover:after {
+    width: 100%;
+}
+
+/* Estilo da primeira seção - Sobre */
+
+.about {
+    background-color: #006989;
+}
+
+.about-presentation {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 175px 0;
+}
+
+.about-svg {
+    display: flex;
+    justify-content: center;
+}
+
+.about-text {
+    display: flex;
+    justify-content: center;
+}
+
+.about-text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    text-align: justify;
+    color: #fff;
+    width: 50%;
+    text-shadow: 0px 4px 4px #000;
+}
+
+/* Estilização da segunda seção - Desenvolvedores */
+
+.about-devs-title {
+    display: flex;
+    justify-content: center;
+}
+
+.about-devs-title h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.about-devs-box {
+    max-width: 1440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 175px 55px 175px 55px;
+}
+
+.about-devs-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.about-devs-text h3 {
+    font-family: "Raleaway", sans-serif;
+    font-size: 24px;
+    width: 50%;
+}
+
+.about-devs-text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    width: 50%;
+}
+
+/* Estilização do Footer */
+footer {
+    background-color: #eaebed;
+}
+
+.footer-container {
+    display: flex;
+    max-width: 1440px;
+    padding: 175px 55px 175px 55px;
+}
