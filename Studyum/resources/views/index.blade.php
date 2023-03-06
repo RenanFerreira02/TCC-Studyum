@@ -39,16 +39,9 @@
 
                     <div class="main-text">
                         <p>
-                            Lorem, ipsum dolor sit amet consectetur
-                            adipisicing elit. Nulla explicabo inventore
-                            provident eaque ipsum ex culpa corrupti
-                            repellendus rem, veritatis, error odio corporis
-                            sequi? Veniam distinctio quibusdam illo omnis
-                            nisi?
+                            Texto interativo do próprio site.
                         </p>
-                    </div>
 
-                    <div class="second-text">
                         <p>
                             Lorem, ipsum dolor sit amet consectetur
                             adipisicing elit. Nulla explicabo inventore
