@@ -22,7 +22,7 @@ body {
 
 .header {
     margin: 0 auto;
-    max-width: 1440px;
+    /* max-width: 1440px; */
     display: flex;
     justify-content: space-between;
     align-items: center;
