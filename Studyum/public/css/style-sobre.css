@@ -6,7 +6,7 @@
 /* Estilo principal */
 
 * {
-    margin: 0 ;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -21,7 +21,7 @@ body {
 /* Estilo da Header e da Nav */
 
 .header {
-    margin: 0 auto;
+    margin: 0 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -77,7 +77,7 @@ body {
 }
 
 .about-presentation {
-    margin: 0 auto;
+    margin: 0 8%;
     display: flex;
     align-items: center;
     padding: 175px 0;
@@ -119,12 +119,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 175px 55px 175px 55px;
+    padding: 175px 0;
+    margin: 0 8%;
 }
 
 .about-devs-text {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 50%;
 }
 
@@ -146,6 +148,56 @@ footer {
 }
 
 .footer-container {
+    margin: 0 8%;
     display: flex;
-    padding: 175px 55px 175px 55px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-column {
+    width: 50%;
+}
+
+.footer-column-contact {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-slogan {
+    font-family: "Montserrat", sans-serif;
+    width: 50%;
+    margin: 8% 0;
+}
+
+.footer-contact {
+    margin-top: 5%;
+}
+
+.footer-contact h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.footer-contact-devs {
+    margin: 8% 0;
+}
+
+.dev-name {
+    margin-top: 10%;
+}
+
+.dev-name span {
+    font-family: "Montserrat", sans-serif;
+}
+
+.dev-contacts {
+    margin-top: 5%;
+}
+
+.dev-contacts a {
+    text-decoration: none;
+    padding: 3%;
 }
