@@ -16,7 +16,7 @@
 
                 <nav class="menu">
                     <ul>
-                        <li><a href="" class="home-sobre">Home</a></li>
+                        <li><a href="/home" class="home-sobre">Home</a></li>
 
                         <li><a href="" class="entrar-cadastrar">Entrar</a></li>
 

@@ -18,7 +18,7 @@
 
             <nav class="menu">
                 <ul>
-                    <li><a href="" class="sobre-home">Sobre</a></li>
+                    <li><a href="/sobre" class="sobre-home">Sobre</a></li>
 
                     <li><a href="" class="entrar-cadastrar">Entrar</a></li>
 
@@ -33,15 +33,12 @@
         <main>
             <section class="main">
                 <div class="main-presentation">
-                    <div class="main-svg">
-                        <img src="{{url('images/main.svg')}}" alt="" />
-                    </div>
-
+                    
                     <div class="main-text">
                         <p>
                             Texto interativo do próprio site.
                         </p>
-
+                        
                         <p>
                             Lorem, ipsum dolor sit amet consectetur
                             adipisicing elit. Nulla explicabo inventore
@@ -51,14 +48,85 @@
                             nisi?
                         </p>
                     </div>
+
+                    <div class="main-svg">
+                        <img src="{{url('images/main.svg')}}" alt="" />
+                    </div>
                 </div>
             </section>
 
-            <!-- <section class="about-devs">
-                <div class="about-devs-presentation">
+            <section class="subjects">
+                 <div class="about-devs-presentation">
                     <img src="{{url('images/about-waves.svg')}}" alt="" width="100%" height="200px" />
                 </div>
-            </section> -->
+
+                <div class="subjects-title">
+                    <h1>Matérias</h1>
+                </div>
+            <!--
+                <div class="image-subjects">
+                    <img src="{{url('images/exatas.svg')}}" alt="" />
+                    <img src="{{url('images/biologicas.svg')}}" alt="" />
+                    <img src="{{url('images/humanas.svg')}}" alt="" />
+                    <img src="{{url('images/linguagens.svg')}}" alt="" />
+                </div>
+
+                <div class="text-subjects">
+                    <h1>Exatas</h1>
+                    <h1>Biológicas</h1>
+                    <h1>Humanas</h1>
+                    <h1>Linguagens</h1>
+                </div> -->
+
+                <div class="subjects-container">
+                    <div class="subject-test">
+                        <div class="subject-image">
+                            <img src="{{url('images/exatas.svg')}}" alt="">
+                        </div>
+                        
+                        <div class="subject-title">
+                            <h1>Exatas</h1>
+
+                            <p>Essa seção contém lorem</p>
+                        </div>
+                    </div>
+
+                    <div class="subject-test">
+                        <div class="subject-image">
+                            <img src="{{url('images/biologicas.svg')}}" alt="">
+                        </div>
+                        
+                        <div class="subject-title">
+                            <h1>Biológicas</h1>
+
+                            <p>Essa seção contém lorem</p>
+                        </div>
+                    </div>
+                    <div class="subject-test">
+                        <div class="subject-image">
+                            <img src="{{url('images/humanas.svg')}}" alt="">
+                        </div>
+                        
+                        <div class="subject-title">
+                            <h1>Humanas</h1>
+
+                            <p>Essa seção contém lorem</p>
+                        </div>
+                    </div>
+                    <div class="subject-test">
+                        <div class="subject-image">
+                            <img src="{{url('images/linguagens.svg')}}" alt="">
+                        </div>
+                        
+                        <div class="subject-title">
+                            <h1>Linguagens</h1>
+
+                            <p>Essa seção contém lorem</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
 
         </main>
 
