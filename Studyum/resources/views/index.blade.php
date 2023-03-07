@@ -63,20 +63,6 @@
                 <div class="subjects-title">
                     <h1>Matérias</h1>
                 </div>
-            <!--
-                <div class="image-subjects">
-                    <img src="{{url('images/exatas.svg')}}" alt="" />
-                    <img src="{{url('images/biologicas.svg')}}" alt="" />
-                    <img src="{{url('images/humanas.svg')}}" alt="" />
-                    <img src="{{url('images/linguagens.svg')}}" alt="" />
-                </div>
-
-                <div class="text-subjects">
-                    <h1>Exatas</h1>
-                    <h1>Biológicas</h1>
-                    <h1>Humanas</h1>
-                    <h1>Linguagens</h1>
-                </div> -->
 
                 <div class="subjects-container">
                     <div class="subject-test">
@@ -129,6 +115,144 @@
             </section>
 
         </main>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-colum">
+                    <div class="footer-logo">
+                        <img src="{{url('images/logo.svg')}}" alt="" />
+                    </div>
+
+                    <div class="footer-slogan">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Deleniti fugiat magnam facere
+                            sunt aut ut praesentium! Consequuntur officia
+                            obcaecati reiciendis saepe non aliquid quaerat
+                            quod totam reprehenderit? Dolorem, commodi ipsa!
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-colum">
+                    <div class="footer-contact">
+                        <h3>Contato</h3>
+                    </div>
+
+                    <div class="footer-contact-devs">
+                        <div class="dev-name">
+                            <span>Daniel Baldez Chagas</span>
+                        </div>
+
+                        <div class="dev-contacts">
+                            <a href="https://github.com/Baldez27">
+                                <img
+                                    src="{{url('images/icons/github-icon.svg')}}"
+                                    alt="Github"
+                                />
+                            </a>
+
+                            <a href="https://www.instagram.com/danbaldez27">
+                                <img
+                                    src="{{url('images/icons/instagram-icon.svg')}}"
+                                    alt="Instagram"
+                                />
+                            </a>
+
+                            <a href="mailto:danielbaldez2000@gmail.com">
+                                <img
+                                    src="{{url('images/icons/email-icon.svg')}}"
+                                    alt="E-mail"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="dev-name">
+                            <span>Isabela Vitoria Auta da Costa</span>
+                        </div>
+
+                        <div class="dev-contacts">
+                            <a href="">
+                                <img
+                                    src="{{url('images/icons/github-icon.svg')}}"
+                                    alt="Github"
+                                />
+                            </a>
+
+                            <a href="">
+                                <img
+                                    src="{{url('images/icons/instagram-icon.svg')}}"
+                                    alt="Instagram"
+                                />
+                            </a>
+
+                            <a href="">
+                                <img
+                                    src="{{url('images/icons/email-icon.svg')}}"
+                                    alt="E-mail"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="dev-name">
+                            <span>Kayo Lacerda Martins Lima</span>
+                        </div>
+
+                        <div class="dev-contacts">
+                            <a href="https://github.com/KayoMartins2405">
+                                <img
+                                    src="{{url('images/icons/github-icon.svg')}}"
+                                    alt="Github"
+                                />
+                            </a>
+
+                            <a
+                                href="https://www.instagram.com/kayomartins_2424"
+                            >
+                               <img
+                                    src="{{url('images/icons/instagram-icon.svg')}}"
+                                    alt="Instagram"
+                                />
+                            </a>
+
+                            <a href="mailto:martinslima2424@gmail.com">
+                                <img
+                                    src="{{url('images/icons/email-icon.svg')}}"
+                                    alt="E-mail"
+                                />
+                            </a>
+                        </div>
+
+                        <div class="dev-name">
+                            <span>Renan Kaique Fontes Ferreira</span>
+                        </div>
+
+                        <div class="dev-contacts">
+                            <a href="https://github.com/RenanFerreira02">
+                                <img
+                                    src="{{url('images/icons/github-icon.svg')}}"
+                                    alt="Github"
+                                />
+                            </a>
+
+                            <a href="https://www.instagram.com/nancrazy02">
+                                <img
+                                    src="{{url('images/icons/instagram-icon.svg')}}"
+                                    alt="Instagram"
+                                />
+                            </a>
+
+                            <a href="mailto:renankferreira01@gmail.com">
+                                <img
+                                    src="{{url('images/icons/email-icon.svg')}}"
+                                    alt="E-mail"
+                                />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </div>
 </body>

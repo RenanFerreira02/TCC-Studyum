@@ -86,12 +86,13 @@ body {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    padding: 175px 0;
+    justify-content: flex-end;
+    padding: 175px 55px;
 }
 
 .main-svg {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .main-text {
@@ -158,4 +159,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/* Estilização do Footer */
+footer {
+    background-color: #eaebed;
+}
+
+.footer-container {
+    display: flex;
+    max-width: 1440px;
+    padding: 175px 55px 175px 55px;
+}
+
+.footer-logo{
+    Width: 270px;
+    Height: 62px;
+    Top: 50px;
+    Left: 100px;
 }
