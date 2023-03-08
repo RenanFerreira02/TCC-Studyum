@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="{{url('css/style-style.css')}}" />
+        <link rel="stylesheet" href="{{url('css/style.css')}}" />
         <title>Sobre</title>
     </head>
     <body>
@@ -91,7 +91,7 @@
 
             <footer>
                 <div class="footer-container">
-                    <div class="footer-colum">
+                    <div class="footer-column">
                         <div class="footer-logo">
                             <img src="{{url('images/logo.svg')}}" alt="" />
                         </div>
@@ -107,9 +107,9 @@
                         </div>
                     </div>
 
-                    <div class="footer-colum">
+                    <div class="footer-column-contact">
                         <div class="footer-contact">
-                            <h3>Contato</h3>
+                            <h1>Contato</h1>
                         </div>
 
                         <div class="footer-contact-devs">
