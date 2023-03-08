@@ -1,96 +1,124 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="{{url('css/style-home-sobre.css')}}" />
-        <link rel="stylesheet" href="{{url('css/style-sobre.css')}}" />
-        <title>Sobre</title>
-    </head>
-    <body>
-        <div class="container">
-            <header class="header">
-                <div class="logo">
-                    <img src="{{url('images/logo.svg')}}" alt="" />
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url('css/style-home-sobre.css')}}" />
+    <link rel="stylesheet" href="{{url('css/style-home.css')}}" />
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <img src="{{url('images/logo.svg')}}" alt="" />
+            </div>
+
+            <nav class="menu">
+                <ul>
+                    <li><a href="/sobre" class="home-sobre">Sobre</a></li>
+
+                    <li><a href="" class="entrar-cadastrar">Entrar</a></li>
+
+                    <li>
+                        <a href="" class="entrar-cadastrar">Cadastrar</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <main>
+            <section class="main">
+                <div class="main-presentation">
+                    <div>
+                    <div class="main-text">
+                        <h1>
+                            Texto interativo do próprio site.
+</h1>
+                        
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur
+                            adipisicing elit. Nulla explicabo inventore
+                            provident eaque ipsum ex culpa corrupti
+                            repellendus rem, veritatis, error odio corporis
+                            sequi? Veniam distinctio quibusdam illo omnis
+                            nisi?
+                        </p>
+                    </div>
+                    </div>
+
+                    <div class="main-svg">
+                        <img src="{{url('images/main.svg')}}" alt="" />
+                    </div>
+                </div>
+            </section>
+
+            <section class="subjects">
+                 <div class="subject-presentation">
+                    <img src="{{url('images/about-waves.svg')}}" alt="" width="100%" height="200px" />
                 </div>
 
-                <nav class="menu">
-                    <ul>
-                        <li><a href="/home" class="home-sobre">Home</a></li>
+                <div class="subjects-title">
+                    <h1>Matérias</h1>
+                </div>
 
-                        <li><a href="" class="entrar-cadastrar">Entrar</a></li>
-
-                        <li>
-                            <a href="" class="entrar-cadastrar">Cadastrar</a>
-                        </li>
-                    </ul>
-                </nav>
-            </header>
-
-            <main>
-                <section class="about">
-                    <div class="about-presentation">
-                        <div class="about-svg">
-                            <img src="{{url('images/about.svg')}}" alt="" />
+                <div class="subjects-container">
+                    <div class="subject">
+                        <div class="subject-image">
+                            <img src="{{url('images/exatas.svg')}}" alt="">
                         </div>
+                        
+                        <div class="subject-name">
+                            <h1>Exatas</h1>
 
-                        <div class="about-text">
-                            <p>
-                                Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Nulla explicabo inventore
-                                provident eaque ipsum ex culpa corrupti
-                                repellendus rem, veritatis, error odio corporis
-                                sequi? Veniam distinctio quibusdam illo omnis
-                                nisi?
-                            </p>
+                            <p>Essa seção contém lorem</p>
                         </div>
                     </div>
-                </section>
 
-                <section class="about-devs">
-                    <div class="about-devs-presentation">
-                        <img
-                            src="{{url('images/about-waves.svg')}}"
-                            alt=""
-                            width="100%"
-                            height="200px"
-                        />
-
-                        <div class="about-devs-title">
-                            <h1>Desenvolvedores</h1>
+                    <div class="subject">
+                        <div class="subject-image">
+                            <img src="{{url('images/biologicas.svg')}}" alt="">
                         </div>
+                        
+                        <div class="subject-name">
+                            <h1>Biológicas</h1>
 
-                        <div class="about-devs-box">
-                            <div class="about-devs-text">
-                                <h3>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Consequatur repudiandae
-                                    distinctio animi
-                                </h3>
-
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Illum nam sunt ducimus
-                                    nisi perspiciatis sit neque consequatur
-                                    explicabo molestias quam rem facilis
-                                    praesentium inventore sint, corporis dolor
-                                    dolore suscipit ratione!
-                                </p>
-                            </div>
-
-                            <div class="about-devs-image">
-                                <img
-                                    src="{{url('images/about-devs.svg')}}"
-                                    alt=""
-                                />
-                            </div>
+                            <p>Essa seção contém lorem</p>
                         </div>
                     </div>
-                </section>
-            </main>
+                    <div class="subject">
+                        <div class="subject-image">
+                            <img src="{{url('images/humanas.svg')}}" alt="">
+                        </div>
+                        
+                        <div class="subject-name">
+                            <h1>Humanas</h1>
 
-            <footer>
+                            <p>Essa seção contém lorem</p>
+                        </div>
+                    </div>
+                    <div class="subject">
+                        <div class="subject-image">
+                            <img src="{{url('images/linguagens.svg')}}" alt="">
+                        </div>
+                        
+                        <div class="subject-name">
+                            <h1>Linguagens</h1>
+
+                            <p>Essa seção contém lorem</p>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
                 <div class="footer-container">
                     <div class="footer-column">
                         <div class="footer-logo">
@@ -227,6 +255,8 @@
                     </div>
                 </div>
             </footer>
-        </div>
-    </body>
+
+    </div>
+</body>
+
 </html>

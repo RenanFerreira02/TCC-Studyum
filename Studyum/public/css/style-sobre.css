@@ -1,74 +1,9 @@
+/* Esse CSS é aplicado na Main da página sobre */
+
 /* Fontes */
 
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* Raleway - Fonte para títulos */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* Montserrat - Fonte para textos*/
-
-/* Estilo principal */
-
-* {
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0 auto;
-}
-
-.container {
-    margin: 0 auto;
-}
-
-/* Estilo da Header e da Nav */
-
-.header {
-    margin: 0 8%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-}
-
-.menu ul {
-    list-style: none;
-}
-
-.menu ul li {
-    display: inline;
-}
-
-.home-sobre {
-    text-decoration: none;
-    margin: 0 40px;
-    position: relative;
-    color: #000;
-}
-
-.entrar-cadastrar {
-    text-decoration: none;
-    color: #fff;
-    background-color: #007090;
-    margin: 0 10px;
-    padding: 10px 20px;
-    position: relative;
-    border: none;
-    border-radius: 10px;
-}
-
-.home-sobre:after {
-    content: "";
-    position: absolute;
-    background-color: #007090;
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -5px;
-    transition: 0.3s;
-}
-
-.home-sobre:hover:after {
-    width: 100%;
-}
 
 /* Estilo da primeira seção - Sobre */
 
@@ -98,8 +33,8 @@ body {
     font-size: 24px;
     text-align: justify;
     color: #fff;
-    width: 50%;
-    text-shadow: 0px 4px 4px #000;
+    width: 55%;
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
 }
 
 /* Estilização da segunda seção - Desenvolvedores */

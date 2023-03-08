@@ -1,0 +1,89 @@
+/* Este CSS é aplicado na Main da página Home */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* Raleway - Fonte para títulos */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* Montserrat - Fonte para textos*/
+
+/* Estilo da primeira seção - Apresentação */
+
+.main {
+    background-color: #006989;
+}
+
+.main-presentation {
+    margin: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 175px 0;
+}
+
+.main-svg {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main-text {
+    width: 55%;
+}
+
+.main-text h1 {
+    font-family: "Raleway", sans-serif;
+    color: #fff;
+    margin-bottom: 45px;
+    font-size: 28px;
+    font-weight: 500;
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+.main-text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    text-align: justify;
+    color: #fff;
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+/* Estilização da segunda seção - Matérias */
+
+.subjects-title {
+    display: flex;
+    justify-content: center;
+}
+
+.subjects-title h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.subjects-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 175px 0;
+    margin: 0 8%;
+}
+
+.subject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subject-image img {
+    filter: drop-shadow(0px 4px 4px #999);
+}
+
+.subject-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.subject-name h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+.subject-name p {
+    font-family: "Montserrat", sans-serif;
+}
