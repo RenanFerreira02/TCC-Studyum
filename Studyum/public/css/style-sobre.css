@@ -1,0 +1,138 @@
+/* Esse CSS é aplicado na Main da página sobre */
+
+/* Fontes */
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* Raleway - Fonte para títulos */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* Montserrat - Fonte para textos*/
+
+/* Estilo da primeira seção - Sobre */
+
+.about {
+    background-color: #006989;
+}
+
+.about-presentation {
+    margin: 0 8%;
+    display: flex;
+    align-items: center;
+    padding: 175px 0;
+}
+
+.about-svg {
+    display: flex;
+    justify-content: center;
+}
+
+.about-text {
+    display: flex;
+    justify-content: center;
+}
+
+.about-text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    text-align: justify;
+    color: #fff;
+    width: 55%;
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+/* Estilização da segunda seção - Desenvolvedores */
+
+.about-devs-title {
+    display: flex;
+    justify-content: center;
+}
+
+.about-devs-title h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.about-devs-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 175px 0;
+    margin: 0 8%;
+}
+
+.about-devs-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.about-devs-text h3 {
+    font-family: "Raleaway", sans-serif;
+    font-size: 24px;
+    width: 50%;
+}
+
+.about-devs-text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    width: 50%;
+}
+
+/* Estilização do Footer */
+footer {
+    background-color: #eaebed;
+}
+
+.footer-container {
+    margin: 0 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-column {
+    width: 50%;
+}
+
+.footer-column-contact {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-slogan {
+    font-family: "Montserrat", sans-serif;
+    width: 50%;
+    margin: 8% 0;
+}
+
+.footer-contact {
+    margin-top: 5%;
+}
+
+.footer-contact h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.footer-contact-devs {
+    margin: 8% 0;
+}
+
+.dev-name {
+    margin-top: 10%;
+}
+
+.dev-name span {
+    font-family: "Montserrat", sans-serif;
+}
+
+.dev-contacts {
+    margin-top: 5%;
+}
+
+.dev-contacts a {
+    text-decoration: none;
+    padding: 3%;
+}
