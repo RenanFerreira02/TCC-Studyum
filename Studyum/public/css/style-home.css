@@ -142,17 +142,19 @@ body {
     justify-content: space-between;
     vertical-align: Top;
 } */
- 
+
 .subjects-container {
     display: flex;
-    justify-content: space-between;
-    padding: 140px;
+    justify-content: space-evenly;
+    padding: 10em;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .subject-test {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding: 2em;
 }
 
 .subject-title {
@@ -172,9 +174,9 @@ footer {
     padding: 175px 55px 175px 55px;
 }
 
-.footer-logo{
-    Width: 270px;
-    Height: 62px;
-    Top: 50px;
-    Left: 100px;
+.footer-logo {
+    width: 270px;
+    height: 62px;
+    top: 50px;
+    left: 100px;
 }
