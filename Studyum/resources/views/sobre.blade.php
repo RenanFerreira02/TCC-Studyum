@@ -22,10 +22,10 @@
                     <ul>
                         <li><a href="/" class="home-sobre">Home</a></li>
 
-                        <li><a href="" class="entrar-cadastrar">Entrar</a></li>
+                        <li><a href="/login" class="entrar-cadastrar">Entrar</a></li>
 
                         <li>
-                            <a href="" class="entrar-cadastrar">Cadastrar</a>
+                            <a href="/cadastro" class="entrar-cadastrar">Cadastrar</a>
                         </li>
                     </ul>
                 </nav>
