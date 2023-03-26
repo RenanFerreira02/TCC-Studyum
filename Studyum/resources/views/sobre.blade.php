@@ -4,10 +4,13 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="{{url('css/style-home-sobre.css')}}" />
-        <link rel="stylesheet" href="{{url('css/style-sobre.css')}}" />
+        <link rel="stylesheet" href="{{url('css/css-reset.css')}}" />
+        <link rel="stylesheet" href="{{url('css/header-nav.css')}}" />
+        <link rel="stylesheet" href="{{url('css/about.css')}}" />
+        <link rel="stylesheet" href="{{url('css/footer.css')}}" />
         <title>Sobre</title>
     </head>
+
     <body>
         <div class="container">
             <header class="header">
@@ -17,7 +20,7 @@
 
                 <nav class="menu">
                     <ul>
-                        <li><a href="/home" class="home-sobre">Home</a></li>
+                        <li><a href="/" class="home-sobre">Home</a></li>
 
                         <li><a href="" class="entrar-cadastrar">Entrar</a></li>
 
@@ -50,12 +53,14 @@
 
                 <section class="about-devs">
                     <div class="about-devs-presentation">
-                        <img
-                            src="{{url('images/about-waves.svg')}}"
-                            alt=""
-                            width="100%"
-                            height="200px"
-                        />
+                        <div class="waves">
+                            <img
+                                src="{{url('images/about-waves.svg')}}"
+                                alt=""
+                                width="100%"
+                                height="200px"
+                            />
+                        </div>
 
                         <div class="about-devs-title">
                             <h1>Desenvolvedores</h1>

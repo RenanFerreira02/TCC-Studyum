@@ -1,0 +1,74 @@
+/* Estilo da primeira seção - Sobre */
+
+.about {
+    background-color: #006989;
+}
+
+.about-presentation {
+    margin: 0 8%;
+    display: flex;
+    align-items: center;
+    padding: 175px 0;
+}
+
+.about-svg {
+    display: flex;
+    justify-content: center;
+}
+
+.about-text {
+    display: flex;
+    justify-content: center;
+}
+
+.about-text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    text-align: justify;
+    color: #fff;
+    width: 55%;
+    text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+/* Estilização da segunda seção - Desenvolvedores */
+
+.about-devs-presentation {
+    overflow: hidden;
+}
+
+.about-devs-title {
+    text-align: center;
+}
+
+.about-devs-title h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+}
+
+.about-devs-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 175px 0;
+    margin: 0 8%;
+}
+
+.about-devs-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.about-devs-text h3 {
+    font-family: "Raleaway", sans-serif;
+    font-size: 24px;
+    width: 50%;
+}
+
+.about-devs-text p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    width: 50%;
+}

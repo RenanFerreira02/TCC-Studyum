@@ -1,0 +1,38 @@
+/* Importação das fontes do site */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* Raleway - Fonte para títulos */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* Montserrat - Fonte para textos*/
+
+/* Remove a margem e o preenchimento padrão */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove a formatação padrão da lista */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove a decoração de link padrão */
+a {
+    text-decoration: none;
+}
+
+/* Estilo principal */
+
+body {
+    margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+.waves {
+    overflow: hidden;
+}
+
+.waves img {
+    filter: drop-shadow(0px 4px 4px #999);
+}

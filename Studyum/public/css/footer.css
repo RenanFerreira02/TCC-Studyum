@@ -1,0 +1,59 @@
+/* Estilização do Footer */
+footer {
+    background-color: #eaebed;
+}
+
+.footer-container {
+    margin: 0 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-column {
+    width: 45%;
+}
+
+.footer-column-contact {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-slogan {
+    font-family: "Montserrat", sans-serif;
+    width: 50%;
+    margin: 8% 0;
+}
+
+.footer-contact {
+    margin-top: 5%;
+}
+
+.footer-contact h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+}
+
+.footer-contact-devs {
+    margin: 8% 0;
+}
+
+.dev-name {
+    margin-top: 10%;
+}
+
+.dev-name span {
+    font-family: "Montserrat", sans-serif;
+}
+
+.dev-contacts {
+    margin-top: 5%;
+}
+
+.dev-contacts a {
+    text-decoration: none;
+    padding: 3%;
+}
