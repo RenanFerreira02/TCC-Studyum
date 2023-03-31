@@ -1,38 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="{{url('css/css-reset.css')}}" />
-        <link rel="stylesheet" href="{{url('css/login.css')}}" />
+        <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
+        <link rel="stylesheet" href="{{url('css/login-cadastro/login.css')}}" />
         <title>Login</title>
     </head>
 
     <body>
+        <div class="header">
+            <nav class="menu">
+                <ul>
+                    <li><a href="/" class="home-sobre">Home</a></li>
+                    <li><a href="/sobre" class="home-sobre">Sobre</a></li>
+                </ul>
+            </nav>
+        </div>
+
         <div class="container-login">
             <div class="img-box">
-                <img src="{{url('images/Login.svg')}}" />
+                <img src="{{url('images/login/Login.svg')}}" />
             </div>
-            
+
             <div class="content-box">
                 <div class="form-box">
-                    <img
-                        src="{{url('images/Logo.svg')}}"
-                        alt="logoStudyum"
-                        class="logo"
-                    />
+                    <div class="logo">
+                        <img
+                            src="{{url('images/templates/Logo.svg')}}"
+                            alt="logoStudyum"
+                        />
+                    </div>
 
                     <h2>Login</h2>
 
                     <form>
                         <div class="input-box">
-                            <span></span>
                             <input type="email" placeholder="E-mail" />
                         </div>
 
                         <div class="input-box">
-                            <span></span>
                             <input type="password" placeholder="Senha" />
                         </div>
 
@@ -44,14 +52,17 @@
                         </div>
 
                         <div class="input-box">
-                            <input type="submit" placeholder="Entrar" />
+                            <input type="submit" value="Entrar" />
                         </div>
 
-                        <ul class="ul">
-                            <li>
-                                <img src="{{url('images/google-logo.png')}}" />
-                            </li>
-                        </ul>
+                        <div class="input-box">
+                            <p>Ou</p>
+                            <img
+                                src="{{url('images/icons/google-logo.png')}}"
+                                class="other-login"
+                            />
+                        </div>
+
                         <div class="input-box">
                             <p>
                                 Ainda não tem uma conta?

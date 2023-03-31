@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* Raleway - Fonte para títulos */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* Montserrat - Fonte para textos*/
 
+:root {
+    --font-title: "Raleway", sans-serif;
+    --font-text: "Montserrat", sans-serif;
+}
+
 /* Remove a margem e o preenchimento padrão */
 * {
     margin: 0;

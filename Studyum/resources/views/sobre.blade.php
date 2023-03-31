@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="pt_BR">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="{{url('css/css-reset.css')}}" />
-        <link rel="stylesheet" href="{{url('css/header-nav.css')}}" />
-        <link rel="stylesheet" href="{{url('css/about.css')}}" />
-        <link rel="stylesheet" href="{{url('css/footer.css')}}" />
+        <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
+        <link rel="stylesheet" href="{{url('css/templates/header-nav.css')}}" />
+        <link rel="stylesheet" href="{{url('css/templates/footer.css')}}" />
+        <link rel="stylesheet" href="{{url('css/landing-page-about/about.css')}}" />
         <title>Sobre</title>
     </head>
 
@@ -15,7 +15,7 @@
         <div class="container">
             <header class="header">
                 <div class="logo">
-                    <img src="{{url('images/logo.svg')}}" alt="" />
+                    <img src="{{url('images/templates/logo.svg')}}" alt="" />
                 </div>
 
                 <nav class="menu">
@@ -35,7 +35,7 @@
                 <section class="about">
                     <div class="about-presentation">
                         <div class="about-svg">
-                            <img src="{{url('images/about.svg')}}" alt="" />
+                            <img src="{{url('images/about/about.svg')}}" alt="" />
                         </div>
 
                         <div class="about-text">
@@ -52,16 +52,16 @@
                 </section>
 
                 <section class="about-devs">
+                    <div class="waves">
+                        <img
+                        src="{{url('images/templates/waves.svg')}}"
+                        alt=""
+                        width="100%"
+                        height="200px"
+                        />
+                    </div>
+                    
                     <div class="about-devs-presentation">
-                        <div class="waves">
-                            <img
-                                src="{{url('images/about-waves.svg')}}"
-                                alt=""
-                                width="100%"
-                                height="200px"
-                            />
-                        </div>
-
                         <div class="about-devs-title">
                             <h1>Desenvolvedores</h1>
                         </div>
@@ -86,7 +86,7 @@
 
                             <div class="about-devs-image">
                                 <img
-                                    src="{{url('images/about-devs.svg')}}"
+                                    src="{{url('images/about/about-devs.svg')}}"
                                     alt=""
                                 />
                             </div>
@@ -99,7 +99,7 @@
                 <div class="footer-container">
                     <div class="footer-column">
                         <div class="footer-logo">
-                            <img src="{{url('images/logo.svg')}}" alt="" />
+                            <img src="{{url('images/templates/logo.svg')}}" alt="" />
                         </div>
 
                         <div class="footer-slogan">

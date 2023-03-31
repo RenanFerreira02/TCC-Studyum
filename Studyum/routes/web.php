@@ -20,9 +20,11 @@ Route::get('/', function () {
 Route::get('/sobre', function () {
     return view('sobre');
 });
+
 Route::get('/login', function () {
     return view('login');
 });
+
 Route::get('/cadastro', function () {
     return view('cadastro');
 });

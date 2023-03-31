@@ -5,20 +5,22 @@
 }
 
 .about-presentation {
-    margin: 0 8%;
+    margin: 0 4%;
     display: flex;
     align-items: center;
-    padding: 175px 0;
+    padding: 125px 0;
 }
 
 .about-svg {
     display: flex;
     justify-content: center;
+    width: 50%;
 }
 
 .about-text {
     display: flex;
     justify-content: center;
+    width: 50%;
 }
 
 .about-text p {
@@ -26,15 +28,11 @@
     font-size: 24px;
     text-align: justify;
     color: #fff;
-    width: 55%;
+    width: 50%;
     text-shadow: 0px 4px 7px rgba(0, 0, 0, 0.8);
 }
 
 /* Estilização da segunda seção - Desenvolvedores */
-
-.about-devs-presentation {
-    overflow: hidden;
-}
 
 .about-devs-title {
     text-align: center;
@@ -50,14 +48,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 175px 0;
-    margin: 0 8%;
+    padding: 125px 0;
+    margin: 0 4%;
 }
 
 .about-devs-text {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50%;
+}
+
+.about-devs-image {
+    display: flex;
+    justify-content: center;
     width: 50%;
 }
 
@@ -69,6 +73,8 @@
 
 .about-devs-text p {
     font-family: "Montserrat", sans-serif;
+    text-align: justify;
     font-size: 20px;
+    margin-top: 3%;
     width: 50%;
 }
