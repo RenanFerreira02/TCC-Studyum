@@ -58,7 +58,7 @@
                         <div class="input-box">
                             <p>Ou</p>
                             <img
-                                src="{{url('images/icons/google-logo.png')}}"
+                                src="{{url('images/icons/btn_google_signin.png')}}"
                                 class="other-login"
                             />
                         </div>
