@@ -1,0 +1,49 @@
+/* Estilo da Header e da Nav */
+
+.header {
+    margin: 5px 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.home-sobre {
+    margin: 0 30px;
+    position: relative;
+    color: #000;
+}
+
+.entrar-cadastrar {
+    color: #fff;
+    background-color: #007090;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.home-sobre:after {
+    content: "";
+    position: absolute;
+    background-color: #007090;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+.home-sobre:hover:after {
+    width: 100%;
+}

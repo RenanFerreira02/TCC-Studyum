@@ -4,11 +4,10 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="{{url('css/css-reset.css')}}" />
-        <link rel="stylesheet" href="{{url('css/header-nav.css')}}" />
-        <link rel="stylesheet" href="{{url('css/landing-page.css')}}" />
-        <link rel="stylesheet" href="{{url('css/footer.css')}}" />
-        <link rel="stylesheet" href="{{url('style.css')}}" />
+        <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
+        <link rel="stylesheet" href="{{url('css/templates/header-nav.css')}}" />
+        <link rel="stylesheet" href="{{url('css/templates/footer.css')}}" />
+        <link rel="stylesheet" href="{{url('css/landing-page-about/landing-page.css')}}" />
         <title>Home</title>
     </head>
 
@@ -16,7 +15,7 @@
         <div class="container">
             <header class="header">
                 <div class="logo">
-                    <img src="{{url('images/logo.svg')}}" alt="" />
+                    <img src="{{url('images/templates/logo.svg')}}" alt="" />
                 </div>
 
                 <nav class="menu">
@@ -35,23 +34,21 @@
             <main>
                 <section class="main">
                     <div class="main-presentation">
-                        <div>
-                            <div class="main-text">
-                                <h1>Texto interativo do próprio site.</h1>
+                        <div class="main-text">
+                            <h1>Texto interativo do próprio site.</h1>
 
-                                <p>
-                                    Lorem, ipsum dolor sit amet consectetur
-                                    adipisicing elit. Nulla explicabo inventore
-                                    provident eaque ipsum ex culpa corrupti
-                                    repellendus rem, veritatis, error odio
-                                    corporis sequi? Veniam distinctio quibusdam
-                                    illo omnis nisi?
-                                </p>
-                            </div>
+                            <p>
+                                Lorem, ipsum dolor sit amet consectetur
+                                adipisicing elit. Nulla explicabo inventore
+                                provident eaque ipsum ex culpa corrupti
+                                repellendus rem, veritatis, error odio corporis
+                                sequi? Veniam distinctio quibusdam illo omnis
+                                nisi?
+                            </p>
                         </div>
 
                         <div class="main-svg">
-                            <img src="{{url('images/main.svg')}}" alt="" />
+                            <img src="{{url('images/landing-page/main.svg')}}" alt="" />
                         </div>
                     </div>
                 </section>
@@ -59,7 +56,7 @@
                 <section class="subjects">
                     <div class="waves">
                         <img
-                            src="{{url('images/about-waves.svg')}}"
+                            src="{{url('images/templates/waves.svg')}}"
                             alt=""
                             width="100%"
                             height="200px"
@@ -74,7 +71,7 @@
                         <div class="subject">
                             <div class="subject-image">
                                 <img
-                                    src="{{url('images/exatas.svg')}}"
+                                    src="{{url('images/landing-page/exatas.svg')}}"
                                     alt=""
                                 />
                             </div>
@@ -89,7 +86,7 @@
                         <div class="subject">
                             <div class="subject-image">
                                 <img
-                                    src="{{url('images/biologicas.svg')}}"
+                                    src="{{url('images/landing-page/biologicas.svg')}}"
                                     alt=""
                                 />
                             </div>
@@ -103,7 +100,7 @@
                         <div class="subject">
                             <div class="subject-image">
                                 <img
-                                    src="{{url('images/humanas.svg')}}"
+                                    src="{{url('images/landing-page/humanas.svg')}}"
                                     alt=""
                                 />
                             </div>
@@ -117,7 +114,7 @@
                         <div class="subject">
                             <div class="subject-image">
                                 <img
-                                    src="{{url('images/linguagens.svg')}}"
+                                    src="{{url('images/landing-page/linguagens.svg')}}"
                                     alt=""
                                 />
                             </div>
@@ -136,7 +133,7 @@
                 <div class="footer-container">
                     <div class="footer-column">
                         <div class="footer-logo">
-                            <img src="{{url('images/logo.svg')}}" alt="" />
+                            <img src="{{url('images/templates/logo.svg')}}" alt="" />
                         </div>
 
                         <div class="footer-slogan">
