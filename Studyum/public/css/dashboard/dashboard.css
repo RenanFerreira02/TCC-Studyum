@@ -1,77 +1,47 @@
-*{
-    margin: 0;
+* {
+	margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body{
-    min-height: 100vh;
-}
-
-a{
+    outline: none;
+    border: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
-li{
-    list-style: none;
+body {
+	
 }
 
-h1,h2{
-    color: #444;
-}
-
-h3{
-    color: #999;
-}
- 
-.btn{
-    background: #006989;
-    color: white;
-    padding: 5px 10px;
-    text-align: center;
-}
-
-.btn:hover{
-    color: #006989;
-    background: white;
-    padding: 3px 8px;
-    border: 2px solid #006989;
-}
-
-.title{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 15px 10px;
-    border-bottom: 2px solid #999 ;
-}
-table{
-    padding: 10px;
-}
-th,td{
-    text-align: left;
-    padding: 8px;
-}
 
 .side-menu {
-    position: fixed;
+    position: absolute;
     background: #006989;
-    width: 20vw;
+    width: 16vw;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    padding: 20px 30px; 
+    overflow: hidden;
+    transition: width 0.2s linear;
+    box-shadow: 0 20px 35px rgba(0,0,0,0.1);
 }
-
+.side-menu:hover{
+    width: 280px;
+    transition: all 0.3s ease;
+}
 .side-menu .brand-name{
-    height: 10vh ;
+    height: 20vh ;
     display: flex;
     align-items: center;
     justify-content: center;
+   
 }
 
+ul{
+    list-style: none ;
+  
+}
 .side-menu li{
-    font-size: 24px;
+    font-size: 17px;
     padding: 10px 40px;
     color: white;
     display: flex;
@@ -83,87 +53,38 @@ th,td{
     color: #006989;
 }
 
+ .content{
+    position: absolute;
+    margin-top: 10vh;
+    min-height: 90vh; 
+}
+img{
+    
+    padding: 10px 0;
+}
+
+h1{
+    position: absolute;
+    width: 85px;
+    height: 28px;
+    left: 0px;
+    top: 0px;
+    
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #000000;
+}
+
 .container{
     position: absolute;
     right: 0;
     width: 80vw;
-    height: 100vh;  
-    background: #f1f1f1;
-}
-
-.container .header{
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 80vw;
-    height: 10vh;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
-}
-
-.container .header .nav{
-    width: 90%;
-    display: flex;
-    align-items: center;
-}
-
-.container .header .nav .search{
-    flex: 3;
-    display: flex;   
-    justify-content: center;
-}
-.container .header .nav .search input[type=text]{
-    border: none;
-    background: #f1f1f1;
-    padding: 10px;
-    width: 50%;
-}
-.container .header .nav .search button{
-    width: 40px;
-    height: 40px;
-    border: none;
-}
-.container .header .nav .search button img{
-    width: 30px;
-    height: 30px;
-    border: none;
-    display: flex;
-    align-items: center;
-}
-
-.container .header .nav .user{
-    flex: 1;
-    display: flex;
-    justify-content: space-between ;
-    align-items: center;
-}
-.container .header .nav .user img{
-    width: 40px;
-    height: 40px;
-}
-
-.container .header .nav  .user .img-case{
-    position: relative;
-    width: 50px;
-    height: 50px;
-}
-.container .header .nav  .user .img-case img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.container .content{
-    position: relative;
-    margin-top: 10vh;
-    min-height: 90vh;
-    background: #f1f1f1;
+    height: 100vh; 
+    padding: 25px; 
 }
 
 .container .content .cards{
@@ -186,52 +107,17 @@ th,td{
     box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
 }
 
-.container .content .content-2{
-    min-height: 60vh;
-    display: flex;
-    justify-content: space-around ;
-    align-items: flex-start;
-    flex-wrap: wrap;
+.logout{
+    position: absolute;
+    bottom: 0;
 }
 
-@media screen(max-width: 1050px){
-    .side-menu li {
-        font-size:18px;
-    }
-}
 
-@media screen (max-width: 940px){
-    .side-menu li span {
-        display: none; 
-    }
-    .side-menu{
-        align-items: center;
-    }
-    .side-menu li img{
-        width: 40px;
-        height: 40px;
-    }
-    .side-menu li:hover{
-        background: #006989;
-        padding: 8px 38px ;
-        border: 2px solid white;
-    }
-}
 
-@media screen (max-width: 536px){
-    .brand-name h1 {
-        font-size: 18px;
-    }
-    .container .content .cards{
-        justify-content: center;
-    }
-    .side-menu li img{
-        width: 30px;
-        height: 30px;
-    }
-    .container .content .content-2 {
-      display: none;  
-    }
-}
+
+
+
+
+
 
 
