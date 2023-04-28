@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\testeController;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +34,7 @@ Route::get('/cadastro', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+
+Route::get('/teste', [testeController::class , 'index']);
+Route::post('/teste', [testeController::class , 'store']);
+
