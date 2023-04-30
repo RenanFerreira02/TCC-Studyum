@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\testeController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -32,3 +34,7 @@ Route::get('/cadastro', function () {
 Route::get('/materias', function () {
     return view('materias');
 });
+
+Route::get('/teste', [testeController::class , 'index']);
+Route::post('/teste', [testeController::class , 'store']);
+

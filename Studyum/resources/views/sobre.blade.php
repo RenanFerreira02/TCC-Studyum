@@ -96,10 +96,12 @@
 
                         <div class="footer-slogan">
                             <p>
-                            Que o aprendizado vire rotina.
-                            <br>
-                            Nenhum caminho é longo demais quando a educação nos acompanha.
+                                Que o aprendizado vire rotina.
                             </p>
+
+                            </br>
+
+                            <p>Nenhume caminho é longo demais quando a educação nos acompanha. </p>
                         </div>
                     </div>
 

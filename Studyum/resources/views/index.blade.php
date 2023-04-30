@@ -134,12 +134,12 @@
 
                         <div class="footer-slogan">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Deleniti fugiat magnam facere
-                                sunt aut ut praesentium! Consequuntur officia
-                                obcaecati reiciendis saepe non aliquid quaerat
-                                quod totam reprehenderit? Dolorem, commodi ipsa!
+                                Que o aprendizado vire rotina.
                             </p>
+
+                            </br>
+
+                            <p>Nenhume caminho é longo demais quando a educação nos acompanha. </p>
                         </div>
                     </div>
 
