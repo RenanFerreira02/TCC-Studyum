@@ -29,6 +29,6 @@ Route::get('/cadastro', function () {
     return view('cadastro');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
+Route::get('/materias', function () {
+    return view('materias');
 });

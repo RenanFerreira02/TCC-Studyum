@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="{{url('css/templates/header-nav.css')}}" />
         <link rel="stylesheet" href="{{url('css/templates/footer.css')}}" />
         <link rel="stylesheet" href="{{url('css/landing-page-about/about.css')}}" />
-        <link rel="stylesheet" href="{{url('css/dashboard/dashboard.css')}}" />
+        <link rel="stylesheet" href="{{url('css/dashboard/materias.css')}}" />
     <title>Dashboard Painel</title>
 </head>
 <body>
