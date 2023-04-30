@@ -1,117 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
-        <link rel="stylesheet" href="{{url('css/templates/header-nav.css')}}" />
-        <link rel="stylesheet" href="{{url('css/templates/footer.css')}}" />
-        <link rel="stylesheet" href="{{url('css/landing-page-about/about.css')}}" />
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Boxicons -->
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="{{url('css/dashboard/dashboard.css')}}" />
-    <title>Dashboard Painel</title>
-</head>
-<body>
-<body>
-<div class="side-menu">
-        <div class="brand-name">
-            <h1></h1>
-        </div>
-       
-            <ul class="nav-links">
-                <li><img src="{{url('images/dashboard/dashboard.png')}}">&nbsp; <span>Dashboard</span></li>
-                <li><img src="{{url('images/dashboard/book.png')}}">&nbsp; <span>Matérias</span></li>
-                <li><img src="{{url('images/dashboard/forum.png')}}">&nbsp; <span>Forúm</span></li>
-                <li><img src="{{url('images/dashboard/lista.png')}}">&nbsp; <span>Lista de Tarefas</span></li>
-                <li class="logout"><img src="{{url('images/dashboard/logout.png')}}">&nbsp; <span>Desconectar</span></li>
+        <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
+        <title>Dashboard</title>
+    </head>
+    <body>
+        <!-- SIDEBAR -->
+        <section id="sidebar">
+            <ul class="side-menu top">
+                <li class="active">
+                    <a href="#">
+                        <i class="bx bxs-dashboard bx-sm"></i>
+
+                        <span class="text">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="bx bx-book-open bx-sm"></i>
+
+                        <span class="text">Matérias</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="bx bx-conversation bx-sm"></i>
+
+                        <span class="text">Fórum</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="bx bx-task bx-sm"></i>
+
+                        <span class="text">Lista de Tarefas</span>
+                    </a>
+                </li>
             </ul>
-        </div>
-    </div>  
-    <section class="container">
-        <div class="content">
-          <h1>1º Série</h1>
-          <div class="cards">
-            
-            <div class="card">
-              <div class="box">
-             
-              </div>
-            </div>
-            
-            <div class="card">
-              <div class="box">
-                
-              </div>
-            </div>
-            
-                  
-            <div class="card">
-              <div class="box">
-               
-              </div>
-            </div>
-           
-            <div class="card">
-              <div class="box">
-              
-              </div>
-            </div>
 
-            <div class="card">
-              <div class="box">
-              
-              </div>
-            </div>
+            <ul class="side-menu">
+                <li>
+                    <a href="#">
+                        <i class="bx bxs-cog bx-sm bx-spin-hover"></i>
 
-            <div class="card">
-              <div class="box">
-              
-              </div>
-            </div>
+                        <span class="text">Configurações</span>
+                    </a>
+                </li>
 
-            <div class="card">
-              <div class="box">
-              
-              </div>
-            </div>
+                <li>
+                    <a href="#" class="logout">
+                        <i class="bx bxs-log-out-circle bx-sm"></i>
 
-            <div class="card">
-              <div class="box">
-              
-              </div>
-            </div>
+                        <span class="text">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <!-- SIDEBAR -->
 
-            <div class="card">
-              <div class="box">
-              
-              </div>
-            </div>
+        <!-- CONTENT -->
+        <section id="content">
+            <!-- NAVBAR -->
+            <nav>
+                <div class="left">
+                    <i class="bx bx-menu bx-sm"></i>
 
-            <div class="card">
-              <div class="box">
-              
-              </div>
-            </div>
+                    <span>Bem vindo, usuário</span>
+                </div>
 
-            <div class="card">
-              <div class="box">
-              
-              </div>
-            </div>
+                <div class="right">
+                    <a href="#" class="notification">
+                        <i class="bx bxs-bell bx-tada-hover"></i>
 
-            <div class="card">
-              <div class="box">
-              
-              </div>
-            </div>
-        </div>
-      </section>
-            
-        
-</body>
-</html> 
+                        <span class="num">8</span>
+                    </a>
 
-<ul>
-                
-          
+                    <a href="#" class="profile">
+                        <img src="{{url('images/templates/Avatar.svg')}}" />
+                    </a>
+                </div>
+            </nav>
+            <!-- NAVBAR -->
+
+            <!-- MAIN -->
+            <main>
+                <div class="head-title">
+                    <div class="left">
+                        <h1>Dashboard</h1>
+                    </div>
+                </div>
+            </main>
+            <!-- MAIN -->
+        </section>
+        <!-- CONTENT -->
+
+        <script src="{{url('scripts/dashboard/dashboard.js')}}"></script>
+    </body>
+</html>
