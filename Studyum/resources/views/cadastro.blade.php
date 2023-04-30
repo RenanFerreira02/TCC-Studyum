@@ -31,9 +31,10 @@
 
                     <h2>Cadastro</h2>
 
-                    <form>
+                    <form action="/cadastro" method="post">
+                        @csrf
                         <div class="input-box">
-                            <input type="name" placeholder="Nome" />
+                            <input type="name" name="name" placeholder="Nome" />
                         </div>
 
                         <div class="input-box">
@@ -41,11 +42,11 @@
                         </div>
 
                         <div class="input-box">
-                            <input type="email" placeholder="E-mail" />
+                            <input type="email" name="email" placeholder="E-mail" />
                         </div>
 
                         <div class="input-box">
-                            <input type="password" placeholder="Senha" />
+                            <input type="password" name="password" placeholder="Senha" />
                         </div>
 
                         <div class="input-box">
