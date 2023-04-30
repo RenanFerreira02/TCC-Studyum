@@ -40,12 +40,9 @@
 
                         <div class="about-text">
                             <p>
-                                Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Nulla explicabo inventore
-                                provident eaque ipsum ex culpa corrupti
-                                repellendus rem, veritatis, error odio corporis
-                                sequi? Veniam distinctio quibusdam illo omnis
-                                nisi?
+                            O Studyum é uma projeto desenvolvido por alunos da ETEC Camargo Aranha afim de ajudar alunos e professores do ensino 
+                            médio público brasileiro, pensando em como os alunos podem evoluir 
+                            na forma de aprender e os professores evoluírem na forma de ensinar.
                             </p>
                         </div>
                     </div>
@@ -69,18 +66,13 @@
                         <div class="about-devs-box">
                             <div class="about-devs-text">
                                 <h3>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Consequatur repudiandae
-                                    distinctio animi
+                                Os desenvolvedores do Studyum também são alunos!
                                 </h3>
 
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Illum nam sunt ducimus
-                                    nisi perspiciatis sit neque consequatur
-                                    explicabo molestias quam rem facilis
-                                    praesentium inventore sint, corporis dolor
-                                    dolore suscipit ratione!
+                                Durante a elaboração do projeto, foi levado em consideração o 
+                                ambiente da ETEC e como nós como alunos poderíamos ajudar a contribuir no aprendizado de todos. 
+                                Conheça um pouco sobre cada desenvolvedor abaixo.    
                                 </p>
                             </div>
 
@@ -104,12 +96,12 @@
 
                         <div class="footer-slogan">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Deleniti fugiat magnam facere
-                                sunt aut ut praesentium! Consequuntur officia
-                                obcaecati reiciendis saepe non aliquid quaerat
-                                quod totam reprehenderit? Dolorem, commodi ipsa!
+                                Que o aprendizado vire rotina.
                             </p>
+
+                            </br>
+
+                            <p>Nenhume caminho é longo demais quando a educação nos acompanha. </p>
                         </div>
                     </div>
 

@@ -35,15 +35,11 @@
                 <section class="main">
                     <div class="main-presentation">
                         <div class="main-text">
-                            <h1>Texto interativo do próprio site.</h1>
+                            <h1>Bem vindo ao Studyum!</h1>
 
                             <p>
-                                Lorem, ipsum dolor sit amet consectetur
-                                adipisicing elit. Nulla explicabo inventore
-                                provident eaque ipsum ex culpa corrupti
-                                repellendus rem, veritatis, error odio corporis
-                                sequi? Veniam distinctio quibusdam illo omnis
-                                nisi?
+                            Descubra uma plataforma, que irá te ajudar a superar os desafios do Ensino Médio 
+                            de forma interativa, dinâmica e efetiva, venha conosco e aproveite o conhecimento.
                             </p>
                         </div>
 
@@ -138,12 +134,12 @@
 
                         <div class="footer-slogan">
                             <p>
-                                Lorem ipsum dolor sit amet consectetur
-                                adipisicing elit. Deleniti fugiat magnam facere
-                                sunt aut ut praesentium! Consequuntur officia
-                                obcaecati reiciendis saepe non aliquid quaerat
-                                quod totam reprehenderit? Dolorem, commodi ipsa!
+                                Que o aprendizado vire rotina.
                             </p>
+
+                            </br>
+
+                            <p>Nenhume caminho é longo demais quando a educação nos acompanha. </p>
                         </div>
                     </div>
 

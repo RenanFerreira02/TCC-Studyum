@@ -1,3 +1,4 @@
+/.phpunit.cache
 /node_modules
 /public/build
 /public/hot
@@ -16,3 +17,4 @@ yarn-error.log
 /.fleet
 /.idea
 /.vscode
+studyum-project-firebase-adminsdk-ccs97-4ae36545c8.json

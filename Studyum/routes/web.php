@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\testeController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +30,11 @@ Route::get('/login', function () {
 Route::get('/cadastro', function () {
     return view('cadastro');
 });
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+Route::get('/teste', [testeController::class , 'index']);
+Route::post('/teste', [testeController::class , 'store']);
+
