@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Kreait\Firebase\Contract\Database;
 
-class testeController extends Controller
+class DatabaseController extends Controller
 {
     public function __construct(Database $database)
     {
@@ -36,18 +36,18 @@ class testeController extends Controller
     {
 
         $postData = [
-            'name' => $request -> name,
-            'date' => $request -> date,
-            'email' => $request -> email,
-            'password' => $request -> password,
+            'name' => $request->name,
+            'date' => $request->date,
+            'email' => $request->email,
+            'password' => $request->password,
         ];
 
-        $postRef = $this -> database -> getReference($this->table) -> push($postData);
+        $postRef = $this->database->getReference($this->table)->push($postData);
 
-        if($postRef) {
-            return redirect('/teste') -> with('alert', 'Sucesso');
+        if ($postRef) {
+            return redirect('/teste')->with('alert', 'Sucesso');
         } else {
-            return redirect('/teste') -> with('alert', 'Falha');
+            return redirect('/teste')->with('alert', 'Falha');
         }
     }
 
