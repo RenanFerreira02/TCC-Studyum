@@ -35,6 +35,14 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 });
 
+Route::get('/materias', function () {
+    return view('materias');
+});
+
+Route::get('/forum', function () {
+    return view('forum');
+});
+
 Route::get('/teste', [testeController::class , 'index']);
 Route::post('/teste', [testeController::class , 'store']);
 
