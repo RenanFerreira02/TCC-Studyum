@@ -119,6 +119,29 @@
             </div>
         </section>
 
+        <section class="container3">
+            <div class="content3">
+            <div class="cards">
+          
+          <div class="card">
+                
+            <div class="box">
+            
+            </div>
+          </div>
+
+          <div class="cards">
+          
+          <div class="card">
+                
+            <div class="box">
+            
+            </div>
+          </div>
+            </div>
+
+        </section>
+
         <script src="{{url('scripts/dashboard/forum.js')}}"></script>
     </body>
 </html>
