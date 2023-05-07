@@ -58,11 +58,16 @@
             </li>
 
             <li>
-                <a href="/logout" class="logout">
-                    <i class="bx bxs-log-out-circle bx-sm"></i>
+                <form method="POST" action="{{ route('logout') }}">
+                    @csrf
 
-                    <span class="text">Logout</span>
-                </a>
+                    <a href="route('logout')" class="logout" onclick="event.preventDefault(); this.closest('form').submit();">
+                        <i class="bx bxs-log-out-circle bx-sm"></i>
+
+                        <span class="text">Logout</span>
+                    </a>
+                </form>
+
             </li>
         </ul>
     </section>
@@ -75,7 +80,7 @@
             <div class="left">
                 <i class="bx bx-menu bx-sm"></i>
 
-                <span>Bem vindo, usuário</span>
+                <span>Bem vindo, {{ Auth::user()->name }}</span>
             </div>
 
             <div class="right">

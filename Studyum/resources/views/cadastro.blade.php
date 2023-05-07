@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
     <link rel="stylesheet" href="{{url('css/login-cadastro/cadastro.css')}}" />
-    <title>Login</title>
+    <title>Cadastro</title>
 </head>
 
 <body>
