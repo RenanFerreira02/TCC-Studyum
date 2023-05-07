@@ -50,7 +50,7 @@
 
         <ul class="side-menu">
             <li>
-                <a href="#">
+                <a href="/profile">
                     <i class="bx bxs-cog bx-sm bx-spin-hover"></i>
 
                     <span class="text">Configurações</span>
@@ -90,7 +90,7 @@
                     <span class="num">8</span>
                 </a>
 
-                <a href="#" class="profile">
+                <a href="/profile" class="profile">
                     <img src="{{url('images/templates/Avatar.svg')}}" />
                 </a>
             </div>
