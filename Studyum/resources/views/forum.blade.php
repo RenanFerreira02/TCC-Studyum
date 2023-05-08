@@ -105,41 +105,46 @@
         </section>
         <!-- CONTENT -->
 
+
+
+
+
         <section class="container2">
             <div class="content2">
-            <div class="cards">
-          
-          <div class="card">
+                <div class="cards">
             
-            <div class="box">
-            <p>Assuntos</p>
-            </div>
-          </div>
+                    <div class="card">
+                
+                        <div class="box">
+                            <p class="assuntos">Assuntos</p>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </section>
 
         <section class="container3">
             <div class="content3">
-            <div class="cards">
-          
-          <div class="card">
+                <div class="cards">
                 
-            <div class="box">
-            
-            </div>
-          </div>
+                    <div class="card">
+                            
+                        <div class="box">
+                            <h3> Titulo do Post</h3><br>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat aliquet maecenas ut sit nulla</p>
+                        </div>
+                    </div>
 
-          <div class="cards">
-          
-          <div class="card">
-                
-            <div class="box">
-            
+                    <div class="card">
+                            
+                        <div class="box">
+                            <h3> Titulo do Post</h3><br>
+                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat aliquet maecenas ut sit nulla</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-            </div>
-
         </section>
 
         <script src="{{url('scripts/dashboard/forum.js')}}"></script>
