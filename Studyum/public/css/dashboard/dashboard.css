@@ -218,6 +218,26 @@ body {
     color: var(--dark);
 }
 
+.content-test {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-test p,
+.content-test a {
+    width: 50%;
+}
+
+.content-test p {
+    margin-top: 10%;
+    text-align: justify;
+}
+
+.content-test a {
+    margin-top: 2%;
+}
+
 /* MAIN */
 /* CONTENT */
 
