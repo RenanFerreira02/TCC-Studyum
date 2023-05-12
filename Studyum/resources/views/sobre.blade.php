@@ -7,7 +7,10 @@
         <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
         <link rel="stylesheet" href="{{url('css/templates/header-nav.css')}}" />
         <link rel="stylesheet" href="{{url('css/templates/footer.css')}}" />
-        <link rel="stylesheet" href="{{url('css/landing-page-about/about.css')}}" />
+        <link
+            rel="stylesheet"
+            href="{{url('css/landing-page-about/about.css')}}"
+        />
         <title>Sobre</title>
     </head>
 
@@ -22,10 +25,14 @@
                     <ul>
                         <li><a href="/" class="home-sobre">Home</a></li>
 
-                        <li><a href="/login" class="entrar-cadastrar">Entrar</a></li>
+                        <li>
+                            <a href="{{ route('login') }}" class="entrar-cadastrar">Entrar</a>
+                        </li>
 
                         <li>
-                            <a href="/cadastro" class="entrar-cadastrar">Cadastrar</a>
+                            <a href="{{ route('register') }}" class="entrar-cadastrar"
+                                > Cadastrar </a
+                            >
                         </li>
                     </ul>
                 </nav>
@@ -35,14 +42,20 @@
                 <section class="about">
                     <div class="about-presentation">
                         <div class="about-svg">
-                            <img src="{{url('images/about/about.svg')}}" alt="" />
+                            <img
+                                src="{{url('images/about/about.svg')}}"
+                                alt=""
+                            />
                         </div>
 
                         <div class="about-text">
                             <p>
-                            O Studyum é uma projeto desenvolvido por alunos da ETEC Camargo Aranha afim de ajudar alunos e professores do ensino 
-                            médio público brasileiro, pensando em como os alunos podem evoluir 
-                            na forma de aprender e os professores evoluírem na forma de ensinar.
+                                O Studyum é uma projeto desenvolvido por alunos
+                                da ETEC Camargo Aranha afim de ajudar alunos e
+                                professores do ensino médio público brasileiro,
+                                pensando em como os alunos podem evoluir na
+                                forma de aprender e os professores evoluírem na
+                                forma de ensinar.
                             </p>
                         </div>
                     </div>
@@ -51,13 +64,13 @@
                 <section class="about-devs">
                     <div class="waves">
                         <img
-                        src="{{url('images/templates/waves.svg')}}"
-                        alt=""
-                        width="100%"
-                        height="200px"
+                            src="{{url('images/templates/waves.svg')}}"
+                            alt=""
+                            width="100%"
+                            height="200px"
                         />
                     </div>
-                    
+
                     <div class="about-devs-presentation">
                         <div class="about-devs-title">
                             <h1>Desenvolvedores</h1>
@@ -66,13 +79,16 @@
                         <div class="about-devs-box">
                             <div class="about-devs-text">
                                 <h3>
-                                Os desenvolvedores do Studyum também são alunos!
+                                    Os desenvolvedores do Studyum também são
+                                    alunos!
                                 </h3>
 
                                 <p>
-                                Durante a elaboração do projeto, foi levado em consideração o 
-                                ambiente da ETEC e como nós como alunos poderíamos ajudar a contribuir no aprendizado de todos. 
-                                Conheça um pouco sobre cada desenvolvedor abaixo.    
+                                    Durante a elaboração do projeto, foi levado
+                                    em consideração o ambiente da ETEC e como
+                                    nós alunos poderíamos ajudar a
+                                    contribuir no aprendizado de todos. Conheça
+                                    um pouco sobre cada desenvolvedor abaixo.
                                 </p>
                             </div>
 
@@ -84,6 +100,66 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="dev-container">
+                        <div class="dev">
+                            <div class="dev-image">
+                                <img
+                                    src="{{url('images/about/nan.png')}}"
+                                    alt=""
+                                />
+                            </div>
+
+                            <div class="dev-name">
+                                <h1>Renan Kaique F. Ferreira</h1>
+
+                                <p>Desenvolvedor Full-Stack</p>
+                            </div>
+                        </div>
+
+                        <div class="dev">
+                            <div class="dev-image">
+                                <img
+                                    src="{{url('images/about/daniel.png')}}"
+                                    alt=""
+                                />
+                            </div>
+
+                            <div class="dev-name">
+                                <h1>Daniel Baldez Chagas</h1>
+
+                                <p>Desenvolvedor Back-End</p>
+                            </div>
+                        </div>
+                        <div class="dev">
+                            <div class="dev-image">
+                                <img
+                                    src="{{url('images/about/isa.png')}}"
+                                    alt=""
+                                />
+                            </div>
+
+                            <div class="dev-name">
+                                <h1>Isabela Auta da Costa</h1>
+
+                                <p>Desenvolvedora Front-End</p>
+                            </div>
+                        </div>
+                        <div class="dev">
+                            <div class="dev-image">
+                                <img
+                                    src="{{url('images/about/kayo.png')}}"
+                                    alt=""
+                                />
+                            </div>
+
+                            <div class="dev-name">
+                                <h1>Kayo Lacerda Martins Lima</h1>
+
+                                <p>Desenvolvedor Front-End</p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </main>
 
@@ -91,17 +167,21 @@
                 <div class="footer-container">
                     <div class="footer-column">
                         <div class="footer-logo">
-                            <img src="{{url('images/templates/logo.svg')}}" alt="" />
+                            <img
+                                src="{{url('images/templates/logo.svg')}}"
+                                alt=""
+                            />
                         </div>
 
                         <div class="footer-slogan">
+                            <p>Que o aprendizado vire rotina.</p>
+
+                            <br />
+
                             <p>
-                                Que o aprendizado vire rotina.
+                                Nenhume caminho é longo demais quando a educação
+                                nos acompanha.
                             </p>
-
-                            </br>
-
-                            <p>Nenhume caminho é longo demais quando a educação nos acompanha. </p>
                         </div>
                     </div>
 

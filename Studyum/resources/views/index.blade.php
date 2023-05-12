@@ -7,7 +7,10 @@
         <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
         <link rel="stylesheet" href="{{url('css/templates/header-nav.css')}}" />
         <link rel="stylesheet" href="{{url('css/templates/footer.css')}}" />
-        <link rel="stylesheet" href="{{url('css/landing-page-about/landing-page.css')}}" />
+        <link
+            rel="stylesheet"
+            href="{{url('css/landing-page-about/landing-page.css')}}"
+        />
         <title>Home</title>
     </head>
 
@@ -22,10 +25,20 @@
                     <ul>
                         <li><a href="/sobre" class="home-sobre">Sobre</a></li>
 
-                        <li><a href="/login" class="entrar-cadastrar">Entrar</a></li>
+                        <li>
+                            <a
+                                href="{{ route('login') }}"
+                                class="entrar-cadastrar"
+                                >Entrar</a
+                            >
+                        </li>
 
                         <li>
-                            <a href="/cadastro" class="entrar-cadastrar">Cadastrar</a>
+                            <a
+                                href="{{ route('register') }}"
+                                class="entrar-cadastrar"
+                                >Cadastrar</a
+                            >
                         </li>
                     </ul>
                 </nav>
@@ -38,13 +51,18 @@
                             <h1>Bem vindo ao Studyum!</h1>
 
                             <p>
-                            Descubra uma plataforma, que irá te ajudar a superar os desafios do Ensino Médio 
-                            de forma interativa, dinâmica e efetiva, venha conosco e aproveite o conhecimento.
+                                Descubra uma plataforma, que irá te ajudar a
+                                superar os desafios do Ensino Médio de forma
+                                interativa, dinâmica e efetiva, venha conosco e
+                                aproveite o conhecimento.
                             </p>
                         </div>
 
                         <div class="main-svg">
-                            <img src="{{url('images/landing-page/main.svg')}}" alt="" />
+                            <img
+                                src="{{url('images/landing-page/main.svg')}}"
+                                alt=""
+                            />
                         </div>
                     </div>
                 </section>
@@ -75,7 +93,7 @@
                             <div class="subject-name">
                                 <h1>Exatas</h1>
 
-                                <p>Essa seção contém lorem</p>
+                                <p>Matemática, Física e Química</p>
                             </div>
                         </div>
 
@@ -90,7 +108,7 @@
                             <div class="subject-name">
                                 <h1>Biológicas</h1>
 
-                                <p>Essa seção contém lorem</p>
+                                <p>Biologia geral, Química</p>
                             </div>
                         </div>
                         <div class="subject">
@@ -104,7 +122,9 @@
                             <div class="subject-name">
                                 <h1>Humanas</h1>
 
-                                <p>Essa seção contém lorem</p>
+                                <p>
+                                    História, Geografia, Filosofia e Sociologia
+                                </p>
                             </div>
                         </div>
                         <div class="subject">
@@ -118,7 +138,7 @@
                             <div class="subject-name">
                                 <h1>Linguagens</h1>
 
-                                <p>Essa seção contém lorem</p>
+                                <p>Língua Portuguesa e Redação</p>
                             </div>
                         </div>
                     </div>
@@ -129,17 +149,21 @@
                 <div class="footer-container">
                     <div class="footer-column">
                         <div class="footer-logo">
-                            <img src="{{url('images/templates/logo.svg')}}" alt="" />
+                            <img
+                                src="{{url('images/templates/logo.svg')}}"
+                                alt=""
+                            />
                         </div>
 
                         <div class="footer-slogan">
+                            <p>Que o aprendizado vire rotina.</p>
+
+                            <br />
+
                             <p>
-                                Que o aprendizado vire rotina.
+                                Nenhume caminho é longo demais quando a educação
+                                nos acompanha.
                             </p>
-
-                            </br>
-
-                            <p>Nenhume caminho é longo demais quando a educação nos acompanha. </p>
                         </div>
                     </div>
 

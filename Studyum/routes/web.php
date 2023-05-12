@@ -1,10 +1,7 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\DatabaseController;
-use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\Auth\RegisterController;
-
 
 /*
 |--------------------------------------------------------------------------
@@ -12,8 +9,8 @@ use App\Http\Controllers\Auth\RegisterController;
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
+| routes are loaded by the RouteServiceProvider and all of them will
+| be assigned to the "web" middleware group. Make something great!
 |
 */
 
@@ -25,26 +22,14 @@ Route::get('/sobre', function () {
     return view('sobre');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
-
-Route::get('/cadastro', function () {
-    return view('cadastro');
-});
-
 Route::get('/dashboard', function () {
     return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/databasetest', [DatabaseController::class, 'index']);
-Route::post('/databasetest', [DatabaseController::class, 'store']);
-
-
-Route::get('/cadastro', [RegisterController::class, 'index']);
-Route::post('/cadastro', [RegisterController::class, 'register']);
-
-Route::get('/login', [LoginController::class, 'index'])->name('login');
-Route::post('/login', [LoginController::class, 'login']);
-
-Route::get('/logout', [LoginController::class, 'logout'])->name('logout');
+require __DIR__ . '/auth.php';

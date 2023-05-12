@@ -29,15 +29,11 @@
 
                 <h2>Cadastro</h2>
 
-                <form action="/cadastro" method="post">
+                <form action="{{ route('register') }}" method="post">
                     @csrf
                     <div class="input-box">
-                        <input type="name" name="name" placeholder="Nome" required />
+                        <input type="text" name="name" placeholder="Nome" required />
                     </div>
-
-                    <!-- <div class="input-box">
-                        <input type="date" />
-                    </div> -->
 
                     <div class="input-box">
                         <input type="email" name="email" placeholder="E-mail" required />
@@ -46,19 +42,19 @@
                     <div class="input-box">
                         <input type="password" name="password" placeholder="Senha" required />
                     </div>
-                    <!-- 
-                    <div class="input-box">
-                        <input type="password" placeholder="Confirme a senha" />
-                    </div> -->
 
                     <div class="input-box">
-                        <input type="submit" value="Cadastrar" />
+                        <input type="password" name="password_confirmation" placeholder="Confirme a senha" />
+                    </div>
+
+                    <div class="input-box">
+                        <input type="submit" value="Cadastrar" action="{{ __('Register') }}" />
                     </div>
 
                     <div class="input-box">
                         <p>
                             Já possui uma conta?
-                            <a href="/login">Fazer login</a>
+                            <a href="{{ route('login') }}">Fazer login</a>
                         </p>
                     </div>
                 </form>
