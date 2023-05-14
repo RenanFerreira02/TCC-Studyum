@@ -1,23 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Boxicons -->
-        <link
-            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-            rel="stylesheet"
-        />
+        <link rel="stylesheet" href="{{url('css/dashboard/materias.css')}}" />
         <link rel="stylesheet" href="{{url('css/dashboard/dashboard.css')}}" />
         <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
-        <title>Dashboard</title>
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        />
+        <title>Matérias</title>
     </head>
-
     <body>
-        <!-- SIDEBAR -->
         <section id="sidebar">
             <ul class="side-menu top">
-                <li class="active">
+                <li>
                     <a href="/dashboard">
                         <i class="bx bxs-dashboard bx-sm"></i>
 
@@ -25,7 +23,7 @@
                     </a>
                 </li>
 
-                <li>
+                <li class="active">
                     <a href="/materias">
                         <i class="bx bx-book-open bx-sm"></i>
 
@@ -76,11 +74,8 @@
                 </li>
             </ul>
         </section>
-        <!-- SIDEBAR -->
 
-        <!-- CONTENT -->
         <section id="content">
-            <!-- NAVBAR -->
             <nav>
                 <div class="left">
                     <i class="bx bx-menu bx-sm"></i>
@@ -100,46 +95,31 @@
                     </a>
                 </div>
             </nav>
-            <!-- NAVBAR -->
 
-            <!-- MAIN -->
             <main>
                 <div class="head-title">
                     <div class="left">
-                        <h1>Dashboard</h1>
+                        <h1>Matérias</h1>
                     </div>
                 </div>
-
-                <div class="content-test">
-                    <p>
-                        Parabéns, você chegou ao fim do teste! <br />
-                        <br />
-                        Obrigado por fazer parte do primeiro teste da plataforma
-                        Studyum, nosso time agradeçe pela sua disponiblidade e
-                        pela atenção. <br />
-                        <br />
-                        Sinta-se livre para explorar essa parte da plataforma
-                        que ainda está sendo construída, teste os botões e
-                        atente-se a detalhes, caso possua alguma sugestão, você
-                        poderá escrever no formulário. <br />
-                        <br />
-                        Não se preocupe com as informações que foram fornecidas
-                        para cadastro e login, nosso banco de dados será apagado
-                        e suas informações serão excluídas.
-                    </p>
-
-                    <a
-                        href="https://forms.gle/AoVrpkAvk3emrz6VA"
-                        target="_blank"
-                    >
-                        Formulário de feedback
-                    </a>
-                </div>
             </main>
-            <!-- MAIN -->
         </section>
-        <!-- CONTENT -->
 
+        <section class="container2">
+            <div class="content2">
+                @foreach($materia_serie as $ms)
+                <h1 class="serie">{{$ms -> serie}}</h1>
+                <div class="cards">
+                    <div class="card">
+                        <div class="box">
+                            <a href="/materias/materia">{{$ms -> materia}}</a>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+            </div>
+        </section>
+        <script src="{{url('scripts/dashboard/materias.js')}}"></script>
         <script src="{{url('scripts/dashboard/dashboard.js')}}"></script>
     </body>
 </html>
