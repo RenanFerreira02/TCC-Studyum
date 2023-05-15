@@ -106,7 +106,22 @@
         <!-- CONTENT -->
 
 
+        <section class="container">
+            <div class="content1">
+                <div class="cards">
+            
+                    <div class="card">
+                            <a href="">
+                                <img class ="add" src="{{url('images/dashboard/button adicionar.png')}}">
+                            </a>
+                        <div class="box">
+                            
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </section>
 
 
         <section class="container2">
@@ -116,7 +131,7 @@
                     <div class="card">
                 
                         <div class="box">
-                            <p class="assuntos">Assuntos</p>
+                            <h1 class="assuntos">Assuntos</h1>
                         </div>
                     </div>
                 </div>
@@ -129,18 +144,28 @@
                 <div class="cards">
                 
                     <div class="card">
-                            
+                            <a href="profile">
+                                <img src="{{url('images/dashboard/Avatar.svg')}}" alt="">
+                            </a>
                         <div class="box">
                             <h3> Titulo do Post</h3><br>
-                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat aliquet maecenas ut sit nulla</p>
+                                <p>Estou com dúvida quanto à uma regra de fatoração pela colocação de um 
+                                    fator comum em evidência. Eu quero saber qual é o 
+                                    sinal que deve ser colocado em evidencia junto com o fator comum.
+                                </p>
                         </div>
                     </div>
 
                     <div class="card">
-                            
+                        
+                            <a href="#">
+                                <img class = "profile2 "src="{{url('images/dashboard/Avatar.svg')}}" alt="">
+                            </a>
                         <div class="box">
                             <h3> Titulo do Post</h3><br>
-                            <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat aliquet maecenas ut sit nulla</p>
+                                <p>Como faço para medir o comprimento de uma circunferência? 
+                                    Como faço o cálculo de um diâmetro? O que é o raio da circunferência?
+                                </p>
                         </div>
                     </div>
                 </div>

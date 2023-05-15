@@ -34,7 +34,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="/forum">
                         <i class="bx bx-conversation bx-sm"></i>
 
                         <span class="text">Fórum</span>
