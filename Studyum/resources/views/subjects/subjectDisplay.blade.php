@@ -99,7 +99,7 @@
             <main>
                 <div class="head-title">
                     <div class="left">
-                        <h1></h1>
+                        <h1>{{$nomeMateriaSerie->materia}} - {{$nomeMateriaSerie->serie}}</h1>
                     </div>
                 </div>
             </main>
@@ -110,8 +110,12 @@
                 <div class="cards">
                     @foreach($materiaSerie as $ms)
                     <div class="card">
-                        <div class="box">
-                            <a href="/materias/materia/conteudo">{{$ms->tituloConteudo}}</a>
+                        <div class="box" >
+                            <a href="{{$ms->conteudo}}">
+                                <div class="nomeMateria">
+                                  <p>{{$ms->tituloConteudo}}</p>
+                                </div>
+                            </a>
                         </div>
                     </div>
                     @endforeach

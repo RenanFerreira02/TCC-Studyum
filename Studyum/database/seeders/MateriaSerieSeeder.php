@@ -29,8 +29,14 @@ class MateriaSerieSeeder extends Seeder
 
             [
                 'idMateriaSerie' => null,
+                'idSerie' => 1,
+                'idMateria' => 3
+            ],
+
+            [
+                'idMateriaSerie' => null,
                 'idSerie' => 2,
-                'idMateria' => 6
+                'idMateria' => 4
             ],
 
             [
@@ -41,8 +47,38 @@ class MateriaSerieSeeder extends Seeder
 
             [
                 'idMateriaSerie' => null,
+                'idSerie' => 2,
+                'idMateria' => 6
+            ],
+
+            [
+                'idMateriaSerie' => null,
+                'idSerie' => 2,
+                'idMateria' => 7
+            ],
+
+            [
+                'idMateriaSerie' => null,
                 'idSerie' => 3,
-                'idMateria' => 3
+                'idMateria' => 8
+            ],
+
+            [
+                'idMateriaSerie' => null,
+                'idSerie' => 3,
+                'idMateria' => 9
+            ],
+
+            [
+                'idMateriaSerie' => null,
+                'idSerie' => 3,
+                'idMateria' => 4
+            ],
+
+            [
+                'idMateriaSerie' => null,
+                'idSerie' => 3,
+                'idMateria' => 2
             ],
 
         ]);

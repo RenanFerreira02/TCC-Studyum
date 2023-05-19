@@ -42,7 +42,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="/listadetarefas">
                         <i class="bx bx-task bx-sm"></i>
 
                         <span class="text">Lista de Tarefas</span>
@@ -102,6 +102,11 @@
             </nav>
             <!-- NAVBAR -->
 
+            <div class="underConstruction">
+                <i class='bx bxs-wrench bx-lg' ></i>
+                <p>Página em construção</p>
+            </div>
+            
             <!-- MAIN -->
             <main>
                 <div class="head-title">

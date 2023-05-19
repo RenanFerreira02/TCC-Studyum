@@ -12,6 +12,12 @@ class ConteudoMateriaController extends Controller
 
         $materiaSerie = ConteudoMateria::where('idMateriaSerie', '=', $id)->get();
 
-        return view('subjects.subjectDisplay', compact('materiaSerie'));
+        $nomeMateriaSerie = ConteudoMateria::ConteudoMateria()
+        ->join('materias', 'materias.idMateria', '=', 'materia_serie.idMateria')
+        ->join('series', 'series.idSerie', '=', 'materia_serie.idSerie')
+        ->where('conteudo_materia.idMateriaSerie', '=', $id)
+        ->first();
+
+        return view('subjects.subjectDisplay', ['materiaSerie' => $materiaSerie, 'nomeMateriaSerie' => $nomeMateriaSerie]);
     }
 }

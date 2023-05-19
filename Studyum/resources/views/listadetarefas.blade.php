@@ -16,8 +16,8 @@
         <!-- SIDEBAR -->
         <section id="sidebar">
             <ul class="side-menu top">
-                <li class="active">
-                    <a href="#">
+                <li>
+                    <a href="/dashboard">
                         <i class="bx bxs-dashboard bx-sm"></i>
 
                         <span class="text">Dashboard</span>
@@ -25,7 +25,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="/materias">
                         <i class="bx bx-book-open bx-sm"></i>
 
                         <span class="text">Matérias</span>
@@ -33,15 +33,15 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="/forum">
                         <i class="bx bx-conversation bx-sm"></i>
 
                         <span class="text">Fórum</span>
                     </a>
                 </li>
 
-                <li>
-                    <a href="#">
+                <li class="active">
+                    <a href="/listadetarefas">
                         <i class="bx bx-task bx-sm"></i>
 
                         <span class="text">Lista de Tarefas</span>
@@ -92,6 +92,12 @@
                 </div>
             </nav>
             <!-- NAVBAR -->
+
+            <div class="underConstruction">
+                <i class='bx bxs-wrench bx-lg' ></i>
+
+                <p>Página em construção</p>
+            </div>
 
             <!-- MAIN -->
             <main>

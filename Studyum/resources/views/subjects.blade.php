@@ -4,7 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="{{url('css/dashboard/materias.css')}}" />
-        <link rel="stylesheet" href="{{url('css/dashboard/dashboard.css')}}" />
         <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
         <link
             rel="stylesheet"
@@ -32,7 +31,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="/forum">
                         <i class="bx bx-conversation bx-sm"></i>
 
                         <span class="text">Fórum</span>
@@ -40,7 +39,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="/listadetarefas">
                         <i class="bx bx-task bx-sm"></i>
 
                         <span class="text">Lista de Tarefas</span>

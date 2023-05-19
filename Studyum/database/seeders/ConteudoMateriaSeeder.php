@@ -41,8 +41,8 @@ class ConteudoMateriaSeeder extends Seeder
 
             [
                 'idConteudoMateria' => null,
-                'idMateriaSerie' => 3,
-                'tituloConteudo' => 'Geometria'
+                'idMateriaSerie' => 6,
+                'tituloConteudo' => 'Leis de Newton'
             ],
         ]);
     }

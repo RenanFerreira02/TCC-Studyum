@@ -44,6 +44,21 @@ class MateriaSeeder extends Seeder
                 'idMateria' => null,
                 'materia' => 'Física'
             ],
+
+            [
+                'idMateria' => null,
+                'materia' => 'Sociologia'
+            ],
+
+            [
+                'idMateria' => null,
+                'materia' => 'Filosofia'
+            ],
+
+            [
+                'idMateria' => null,
+                'materia' => 'Química'
+            ],
         ]);
     }
 }

@@ -245,6 +245,23 @@ body {
 /* MAIN */
 /* CONTENT */
 
+main {
+    filter: blur(7px);
+}
+
+.underConstruction {
+    text-align: center;
+    color: var(--dark);
+    position: absolute;
+    left: 430px;
+    top: 350px;
+}
+
+.underConstruction p {
+    font-size: 50px;
+    font-family: var(--font-title);
+}
+
 @media screen and (max-width: 768px) {
     #sidebar {
         width: 200px;

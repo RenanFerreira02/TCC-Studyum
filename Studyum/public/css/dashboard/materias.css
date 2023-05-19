@@ -263,14 +263,10 @@ body {
     text-align: center;
 }
 
-.nomeMateria p {
+.box p {
     font-family: var(--font-title);
     font-size: 26px;
     color: white;
-}
-
-.nomeMateria {
-    padding-top: 10px;
 }
 
 @media screen and (max-width: 768px) {
