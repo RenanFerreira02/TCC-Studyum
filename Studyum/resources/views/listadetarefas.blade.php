@@ -8,9 +8,9 @@
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="{{url('css/dashboard/forum.css')}}" />
+        <link rel="stylesheet" href="{{url('css/dashboard/lista.css')}}" />
         <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
-        <title>Forum</title>
+        <title>Lista de Tarefas</title>
     </head>
     <body>
         <!-- SIDEBAR -->
@@ -106,72 +106,92 @@
         <!-- CONTENT -->
 
 
-        <section class="container">
+        <section class="container1">
             <div class="content1">
+                <h1 class="serie"> A Fazer</h1>
                 <div class="cards">
             
-                    <div class="card">
-                            <a href="">
-                                <img class ="add" src="{{url('images/dashboard/button adicionar.png')}}">
-                            </a>
-                        <div class="box">
-                            
-                        </div>
+                <div class="card">
+                    <div class="box">
+                
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div class="box">
+                        
+                    </div>
+                </div>
+            
+                    
+                <div class="card">
+                    <div class="box">
+                
                     </div>
                 </div>
 
+                <div class="add1">
+                    <div class="box">
+                        <a href="check">
+                            <img src="{{url('images/dashboard/check.png')}}" alt="btn">
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
-
         <section class="container2">
             <div class="content2">
+                <h1 class="serie">Fazendo</h1>
                 <div class="cards">
             
-                    <div class="card">
+                <div class="card">
+                    <div class="box">
                 
-                        <div class="box">
-                            <h1 class="assuntos">Assuntos</h1>
-                        </div>
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div class="box">
+                        
                     </div>
                 </div>
 
+                <div class="add2">
+                    <div class="box">
+                        <a href="check">
+                            <img src="{{url('images/dashboard/check.png')}}" alt="btn">
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="container3">
             <div class="content3">
+                <h1 class="serie">Feito</h1>
                 <div class="cards">
-                
+            
                     <div class="card">
-                            <a href="profile">
-                                <img src="{{url('images/dashboard/Avatar.svg')}}" alt="">
-                            </a>
                         <div class="box">
-                            <h3> Titulo do Post</h3><br>
-                                <p>Estou com dúvida quanto à uma regra de fatoração pela colocação de um 
-                                    fator comum em evidência. Eu quero saber qual é o 
-                                    sinal que deve ser colocado em evidencia junto com o fator comum.
-                                </p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        
-                            <a href="#">
-                                <img class = "profile2 "src="{{url('images/dashboard/Avatar.svg')}}" alt="">
-                            </a>
-                        <div class="box">
-                            <h3> Titulo do Post</h3><br>
-                                <p>Como faço para medir o comprimento de uma circunferência? 
-                                    Como faço o cálculo de um diâmetro? O que é o raio da circunferência?
-                                </p>
+                    
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <div class="cards">
+            
+                    <div class="add3">
+                        <div class="box">
+                            <a href="check">
+                                <img src="{{url('images/dashboard/check.png')}}" alt="btn">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
         </section>
 
-        <script src="{{url('scripts/dashboard/forum.js')}}"></script>
+        <script src="{{url('scripts/dashboard/listadetarefas.js')}}"></script>
     </body>
 </html>

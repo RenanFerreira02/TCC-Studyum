@@ -24,6 +24,14 @@ Route::get('/sobre', function () {
     return view('about');
 });
 
+Route::get('/forum', function () {
+    return view('forum');
+});
+
+Route::get('/listadetarefas', function () {
+    return view('listadetarefas');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
