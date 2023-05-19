@@ -12,8 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('materia_serie', function (Blueprint $table) {
-            $table->integer('idMateria')->index();
+            $table->id('idMateriaSerie');
             $table->integer('idSerie')->index();
+            $table->integer('idMateria')->index();
         });
     }
 
@@ -22,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('materia_serie');
+        Schema::dropIfExists('serie_materia');
     }
 };

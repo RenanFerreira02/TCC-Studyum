@@ -1,8 +1,9 @@
 <?php
 
-use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\SubjectController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\MateriasController;
+use App\Http\Controllers\ConteudoMateriaController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,14 +29,8 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/materias', [SubjectController::class, 'subjectIndex'])->name('materias');
-    Route::get('/materias/materia', [SubjectController::class, 'subjectDisplay'])->name('materia');
-});
-
-
-
-Route::get('/materias/materia/conteudo', function () {
-    return view('subjects.subjectContent');
+    Route::get('/materias', [MateriasController::class, 'subjectIndex'])->name('materias');
+    Route::get('/materias/{id}', [ConteudoMateriaController::class, 'conteudoMateria']);
 });
 
 Route::middleware('auth')->group(function () {

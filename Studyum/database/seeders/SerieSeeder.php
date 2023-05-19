@@ -15,23 +15,21 @@ class SerieSeeder extends Seeder
     {
         DB::table('series')->insert([
 
-            ['idSerie' => null,
-            'serie' => '1º Ano'],
+            [
+                'idSerie' => null,
+                'serie' => '1ª Série'
+            ],
 
-            ['idSerie' => null,
-            'serie' => '1ª Série'],
+            [
+                'idSerie' => null,
+                'serie' => '2ª Série'
+            ],
 
-            ['idSerie' => null,
-            'serie' => '2º Ano'],
-
-            ['idSerie' => null,
-            'serie' => '2ª Série'],
-
-            ['idSerie' => null,
-            'serie' => '3º Ano'],
-
-            ['idSerie' => null,
-            'serie' => '3ª Série'],
+            [
+                'idSerie' => null,
+                'serie' => '3ª Série
+            '
+            ],
         ]);
     }
 }

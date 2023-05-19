@@ -11,11 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('serie_conteudo', function (Blueprint $table) {
-            $table->id('idConteudo');
-            $table->integer('idSerie')->index();
-            $table->integer('idMateria')->index();
-            $table->text('conteudo');
+        Schema::create('conteudo_materia', function (Blueprint $table) {
+            $table->id('idConteudoMateria');
+            $table->integer('idMateriaSerie')->index();
+            $table->string('tituloConteudo');
         });
     }
 
@@ -24,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('serie_conteu');
+        Schema::dropIfExists('materia_conteudo');
     }
 };

@@ -15,23 +15,35 @@ class MateriaSeeder extends Seeder
     {
         DB::table('materias')->insert([
 
-            ['idMateria' => null,
-            'materia' => 'Matemática'],
+            [
+                'idMateria' => null,
+                'materia' => 'Matemática'
+            ],
 
-            ['idMateria' => null,
-            'materia' => 'Português'],
+            [
+                'idMateria' => null,
+                'materia' => 'Português'
+            ],
 
-            ['idMateria' => null,
-            'materia' => 'História'],
+            [
+                'idMateria' => null,
+                'materia' => 'História'
+            ],
 
-            ['idMateria' => null,
-            'materia' => 'Geografia'],
+            [
+                'idMateria' => null,
+                'materia' => 'Geografia'
+            ],
 
-            ['idMateria' => null,
-            'materia' => 'Ciências'],
+            [
+                'idMateria' => null,
+                'materia' => 'Biologia'
+            ],
 
-            ['idMateria' => null,
-            'materia' => 'Física'],
+            [
+                'idMateria' => null,
+                'materia' => 'Física'
+            ],
         ]);
     }
 }

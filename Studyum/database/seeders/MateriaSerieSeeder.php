@@ -15,11 +15,35 @@ class MateriaSerieSeeder extends Seeder
     {
         DB::table('materia_serie')->insert([
 
-            ['idMateria' => 1,
-            'idSerie' => 1],
+            [
+                'idMateriaSerie' => null,
+                'idSerie' => 1,
+                'idMateria' => 2
+            ],
 
-            ['idMateria' => 2,
-            'idSerie' =>2],
+            [
+                'idMateriaSerie' => null,
+                'idSerie' => 1,
+                'idMateria' => 1
+            ],
+
+            [
+                'idMateriaSerie' => null,
+                'idSerie' => 2,
+                'idMateria' => 6
+            ],
+
+            [
+                'idMateriaSerie' => null,
+                'idSerie' => 2,
+                'idMateria' => 5
+            ],
+
+            [
+                'idMateriaSerie' => null,
+                'idSerie' => 3,
+                'idMateria' => 3
+            ],
 
         ]);
     }

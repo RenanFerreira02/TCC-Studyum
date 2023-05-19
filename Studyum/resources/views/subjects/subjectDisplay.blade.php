@@ -99,36 +99,22 @@
             <main>
                 <div class="head-title">
                     <div class="left">
-                        @foreach($serie_conteudo as $sc)
-                        <h1>{{$sc -> materia}} - {{$sc -> serie}}</h1>
-                        @endforeach
+                        <h1></h1>
                     </div>
                 </div>
             </main>
         </section>
 
-        <section class="container2">
+        <section id="content" class="container2">
             <div class="content2">
                 <div class="cards">
+                    @foreach($materiaSerie as $ms)
                     <div class="card">
                         <div class="box">
-                            <a href="/materias/materia/conteudo">teste</a>
+                            <a href="/materias/materia/conteudo">{{$ms->tituloConteudo}}</a>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <div class="box"></div>
-                    </div>
-                </div>
-
-                <div class="cards">
-                    <div class="card">
-                        <div class="box"></div>
-                    </div>
-
-                    <div class="card">
-                        <div class="box"></div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>
