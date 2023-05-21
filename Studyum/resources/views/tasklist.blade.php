@@ -8,7 +8,7 @@
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="{{url('css/dashboard/lista.css')}}" />
+        <link rel="stylesheet" href="{{url('css/platform/tasks.css')}}" />
         <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
         <title>Lista de Tarefas</title>
     </head>
@@ -41,7 +41,7 @@
                 </li>
 
                 <li class="active">
-                    <a href="/listadetarefas">
+                    <a href="/tarefas">
                         <i class="bx bx-task bx-sm"></i>
 
                         <span class="text">Lista de Tarefas</span>

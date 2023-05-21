@@ -27,7 +27,8 @@ class ConteudoMateriaController extends Controller
         return view('subjects.subjectAdd', ['conteudo' => $conteudo]);
     }
 
-    public function store(Request $request) {
+    public function store(Request $request)
+    {
 
         $conteudo = ConteudoMateria::create([
             'idMateriaSerie' => $request->materiaSerie,
@@ -38,6 +39,23 @@ class ConteudoMateriaController extends Controller
         $conteudo->save();
 
         return redirect('/materias');
+    }
 
+    public function conteudo($id, $idConteudo)
+    {
+
+        $conteudoMateria = ConteudoMateria::where('idMateriaSerie', '=', $id)
+            ->where('idConteudoMateria', '=', $idConteudo)
+            ->get();
+
+        // dd($conteudoMateria);
+        // exit;
+
+        $nomeMateriaSerie = ConteudoMateria::ShowConteudo()
+            ->where('conteudo_materia.idMateriaSerie', '=', $id)
+            ->first();
+
+
+        return view('subjects.subjectContent', ['conteudoMateria' => $conteudoMateria, 'nomeMateriaSerie' => $nomeMateriaSerie]);
     }
 }

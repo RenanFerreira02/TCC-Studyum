@@ -46,6 +46,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/adicionar', [ConteudoMateriaController::class, 'addConteudo'])->name('conteudo');
 
     Route::post('insertConteudo', [ConteudoMateriaController::class, 'store']);
+
+    Route::get('/materias/{id}/{idConteudo}', [ConteudoMateriaController::class, 'conteudo']);
 });
 
 Route::middleware('auth')->group(function () {

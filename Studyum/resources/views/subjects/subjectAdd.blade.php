@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="{{ url('css/dashboard/materias.css') }}" />
+        <link rel="stylesheet" href="{{ url('css/platform/subjects.css') }}" />
         <link
             rel="stylesheet"
             href="{{ url('css/templates/css-reset.css') }}"
@@ -12,7 +12,7 @@
             rel="stylesheet"
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
         />
-        <title>Matérias</title>
+        <title>Adicionar Conteúdo</title>
     </head>
 
     <body>
@@ -129,7 +129,8 @@
 
                 <x-tinymce.tinymce-editor />
 
-                <input type="submit" value="Enviar conteúdo" action='{{__('Insert Conteudo') }}'>
+                <input type="submit" value="Enviar conteúdo"
+                action='{{__('Insert Conteudo') }}'>
             </form>
         </section>
 

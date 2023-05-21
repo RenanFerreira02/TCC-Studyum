@@ -8,7 +8,7 @@
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="{{url('css/dashboard/dashboard.css')}}" />
+        <link rel="stylesheet" href="{{url('css/platform/dashboard.css')}}" />
         <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
         <title>Dashboard</title>
     </head>

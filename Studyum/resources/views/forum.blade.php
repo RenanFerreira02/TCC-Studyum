@@ -8,7 +8,7 @@
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="{{url('css/dashboard/forum.css')}}" />
+        <link rel="stylesheet" href="{{url('css/platform/forum.css')}}" />
         <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
         <title>Forum</title>
     </head>
@@ -41,7 +41,7 @@
                 </li>
 
                 <li>
-                    <a href="/listadetarefas">
+                    <a href="/tarefas">
                         <i class="bx bx-task bx-sm"></i>
 
                         <span class="text">Lista de Tarefas</span>
@@ -105,67 +105,72 @@
         </section>
         <!-- CONTENT -->
 
-
         <section class="container">
             <div class="content1">
                 <div class="cards">
-            
                     <div class="card">
-                            <a href="">
-                                <img class ="add" src="{{url('images/dashboard/button adicionar.png')}}">
-                            </a>
-                        <div class="box">
-                            
-                        </div>
+                        <a href="">
+                            <img
+                                class="add"
+                                src="{{url('images/dashboard/button adicionar.png')}}"
+                            />
+                        </a>
+                        <div class="box"></div>
                     </div>
                 </div>
-
             </div>
         </section>
-
 
         <section class="container2">
             <div class="content2">
                 <div class="cards">
-            
                     <div class="card">
-                
                         <div class="box">
                             <h1 class="assuntos">Assuntos</h1>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <section class="container3">
             <div class="content3">
                 <div class="cards">
-                
                     <div class="card">
-                            <a href="profile">
-                                <img src="{{url('images/dashboard/Avatar.svg')}}" alt="">
-                            </a>
+                        <a href="profile">
+                            <img
+                                src="{{url('images/dashboard/Avatar.svg')}}"
+                                alt=""
+                            />
+                        </a>
                         <div class="box">
-                            <h3> Titulo do Post</h3><br>
-                                <p>Estou com dúvida quanto à uma regra de fatoração pela colocação de um 
-                                    fator comum em evidência. Eu quero saber qual é o 
-                                    sinal que deve ser colocado em evidencia junto com o fator comum.
-                                </p>
+                            <h3>Titulo do Post</h3>
+                            <br />
+                            <p>
+                                Estou com dúvida quanto à uma regra de fatoração
+                                pela colocação de um fator comum em evidência.
+                                Eu quero saber qual é o sinal que deve ser
+                                colocado em evidencia junto com o fator comum.
+                            </p>
                         </div>
                     </div>
 
                     <div class="card">
-                        
-                            <a href="#">
-                                <img class = "profile2 "src="{{url('images/dashboard/Avatar.svg')}}" alt="">
-                            </a>
+                        <a href="#">
+                            <img
+                                class="profile2"
+                                src="{{url('images/dashboard/Avatar.svg')}}"
+                                alt=""
+                            />
+                        </a>
                         <div class="box">
-                            <h3> Titulo do Post</h3><br>
-                                <p>Como faço para medir o comprimento de uma circunferência? 
-                                    Como faço o cálculo de um diâmetro? O que é o raio da circunferência?
-                                </p>
+                            <h3>Titulo do Post</h3>
+                            <br />
+                            <p>
+                                Como faço para medir o comprimento de uma
+                                circunferência? Como faço o cálculo de um
+                                diâmetro? O que é o raio da circunferência?
+                            </p>
                         </div>
                     </div>
                 </div>
