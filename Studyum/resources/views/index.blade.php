@@ -29,16 +29,18 @@
                             <a
                                 href="{{ route('login') }}"
                                 class="entrar-cadastrar"
-                                >Entrar</a
                             >
+                                Entrar
+                            </a>
                         </li>
 
                         <li>
                             <a
                                 href="{{ route('register') }}"
                                 class="entrar-cadastrar"
-                                >Cadastrar</a
                             >
+                                Cadastrar
+                            </a>
                         </li>
                     </ul>
                 </nav>

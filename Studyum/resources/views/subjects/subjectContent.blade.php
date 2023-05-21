@@ -3,15 +3,19 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="{{url('css/dashboard/materias.css')}}" />
-        <link rel="stylesheet" href="{{url('css/dashboard/dashboard.css')}}" />
-        <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
+        <link rel="stylesheet" href="{{ url('css/platform/subjects.css') }}" />
+        <link rel="stylesheet" href="{{ url('css/platform/dashboard.css') }}" />
+        <link
+            rel="stylesheet"
+            href="{{ url('css/templates/css-reset.css') }}"
+        />
         <link
             rel="stylesheet"
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
         />
-        <title>Matérias</title>
+        <title>Conteúdo</title>
     </head>
+
     <body>
         <section id="sidebar">
             <ul class="side-menu top">
@@ -91,7 +95,7 @@
                     </a>
 
                     <a href="/profile" class="profile">
-                        <img src="{{url('images/templates/Avatar.svg')}}" />
+                        <img src="{{ url('images/templates/Avatar.svg') }}" />
                     </a>
                 </div>
             </nav>
@@ -99,24 +103,24 @@
             <main>
                 <div class="head-title">
                     <div class="left">
-                        <h1>Matemática - 1ª série</h1>
+                        @foreach ($conteudoMateria as $sc)
+                        <h1>
+                            {{ $nomeMateriaSerie->materia }} - {{
+                            $nomeMateriaSerie->serie }} - {{ $sc->tituloConteudo
+                            }}
+                        </h1>
+                        @endforeach
                     </div>
                 </div>
             </main>
         </section>
 
         <section class="container2">
-            <div class="content2">
-                <div class="cards">
-                    <div class="card">
-                        <div class="box"></div>
-                    </div>
-
-                  
-                </div>
-            </div>
+            @foreach ($conteudoMateria as $sc)
+            <div class="content2">{{ $sc->conteudo }}</div>
+            @endforeach
         </section>
-        <script src="{{url('scripts/dashboard/materias.js')}}"></script>
-        <script src="{{url('scripts/dashboard/dashboard.js')}}"></script>
+        <script src="{{ url('scripts/dashboard/materias.js') }}"></script>
+        <script src="{{ url('scripts/dashboard/dashboard.js') }}"></script>
     </body>
 </html>

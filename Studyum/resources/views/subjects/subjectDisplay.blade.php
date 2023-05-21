@@ -3,15 +3,18 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="{{url('css/dashboard/materias.css')}}" />
-        <link rel="stylesheet" href="{{url('css/dashboard/dashboard.css')}}" />
-        <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
+        <link rel="stylesheet" href="{{ url('css/platform/conteudos.css') }}" />
+        <link
+            rel="stylesheet"
+            href="{{ url('css/templates/css-reset.css') }}"
+        />
         <link
             rel="stylesheet"
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
         />
-        <title>Matérias</title>
+        <title>Conteúdos</title>
     </head>
+
     <body>
         <section id="sidebar">
             <ul class="side-menu top">
@@ -91,7 +94,7 @@
                     </a>
 
                     <a href="/profile" class="profile">
-                        <img src="{{url('images/templates/Avatar.svg')}}" />
+                        <img src="{{ url('images/templates/Avatar.svg') }}" />
                     </a>
                 </div>
             </nav>
@@ -99,7 +102,10 @@
             <main>
                 <div class="head-title">
                     <div class="left">
-                        <h1>{{$nomeMateriaSerie->materia}} - {{$nomeMateriaSerie->serie}}</h1>
+                        <h1>
+                            {{ $nomeMateriaSerie->materia }} - {{
+                            $nomeMateriaSerie->serie }}
+                        </h1>
                     </div>
                 </div>
             </main>
@@ -108,21 +114,33 @@
         <section id="content" class="container2">
             <div class="content2">
                 <div class="cards">
-                    @foreach($materiaSerie as $ms)
+                    @foreach ($materiaSerie as $ms)
                     <div class="card">
-                        <div class="box" >
-                            <a href="{{$ms->conteudo}}">
+                        <div class="box">
+                            <a
+                                href="/materias/{{ $ms->idMateriaSerie }}/{{ $ms->idConteudoMateria }}"
+                            >
                                 <div class="nomeMateria">
-                                  <p>{{$ms->tituloConteudo}}</p>
+                                    <p>{{ $ms->tituloConteudo }}</p>
                                 </div>
                             </a>
                         </div>
                     </div>
                     @endforeach
+
+                    <div class="card">
+                        <div class="box">
+                            <a href="/adicionar">
+                                <div class="nomeMateria">
+                                    <i class="bx bx-book-add bx-lg"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <script src="{{url('scripts/dashboard/materias.js')}}"></script>
-        <script src="{{url('scripts/dashboard/dashboard.js')}}"></script>
+        <script src="{{ url('scripts/dashboard/materias.js') }}"></script>
+        <script src="{{ url('scripts/dashboard/dashboard.js') }}"></script>
     </body>
 </html>

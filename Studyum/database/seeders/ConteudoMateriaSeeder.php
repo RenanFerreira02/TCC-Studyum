@@ -17,32 +17,37 @@ class ConteudoMateriaSeeder extends Seeder
 
             [
                 'idConteudoMateria' => null,
-                'idMateriaSerie' => 2,
-                'tituloConteudo' => 'Progressão Aritmética'
+                'idMateriaSerie' => 7,
+                'tituloConteudo' => 'Progressão Aritmética',
+                'conteudo' => 'Conteúdo Teste'
             ],
 
             [
                 'idConteudoMateria' => null,
-                'idMateriaSerie' => 2,
-                'tituloConteudo' => 'Progressão Geométrica'
+                'idMateriaSerie' => 7,
+                'tituloConteudo' => 'Progressão Geométrica',
+                'conteudo' => 'Conteúdo Teste'
             ],
 
             [
                 'idConteudoMateria' => null,
-                'idMateriaSerie' => 2,
-                'tituloConteudo' => 'Equação'
+                'idMateriaSerie' => 7,
+                'tituloConteudo' => 'Equação',
+                'conteudo' => 'Conteúdo Teste'
             ],
 
             [
                 'idConteudoMateria' => null,
-                'idMateriaSerie' =>2,
-                'tituloConteudo' => 'Divisão'
+                'idMateriaSerie' =>7,
+                'tituloConteudo' => 'Divisão',
+                'conteudo' => 'Conteúdo Teste'
             ],
 
             [
                 'idConteudoMateria' => null,
-                'idMateriaSerie' => 6,
-                'tituloConteudo' => 'Leis de Newton'
+                'idMateriaSerie' => 3,
+                'tituloConteudo' => 'Leis de Newton',
+                'conteudo' => 'Conteúdo Teste'
             ],
         ]);
     }
