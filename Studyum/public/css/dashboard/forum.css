@@ -399,21 +399,3 @@ h3 {
         display: none;
     }
 }
-
-.container,
-.container1,
-.container2,
-.container3 {
-    filter: blur(7px);
-}
-
-.underConstruction {
-    text-align: center;
-    color: var(--dark);
-}
-
-.underConstruction p {
-    font-size: 50px;
-    font-family: var(--font-title);
-    font-weight: normal;
-}

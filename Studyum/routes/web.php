@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
-use App\Http\Controllers\MateriasController;
+use App\Http\Controllers\MateriaSerieController;
 use App\Http\Controllers\ConteudoMateriaController;
 
 /*
@@ -28,17 +28,24 @@ Route::get('/forum', function () {
     return view('forum');
 });
 
-Route::get('/listadetarefas', function () {
-    return view('listadetarefas');
+Route::get('/tarefas', function () {
+    return view('tasklist');
 });
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/materias', [MateriasController::class, 'subjectIndex'])->name('materias');
+    Route::get('/materias', [MateriaSerieController::class, 'subjectIndex'])->name('materias');
+
     Route::get('/materias/{id}', [ConteudoMateriaController::class, 'conteudoMateria']);
+
+    Route::get('/adicionar', [ConteudoMateriaController::class, 'addConteudo'])->name('conteudo');
+
+    Route::post('insertConteudo', [ConteudoMateriaController::class, 'store']);
 });
 
 Route::middleware('auth')->group(function () {

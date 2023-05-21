@@ -4,7 +4,6 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="{{url('css/dashboard/materias.css')}}" />
-        <link rel="stylesheet" href="{{url('css/dashboard/dashboard.css')}}" />
         <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
         <link
             rel="stylesheet"
@@ -111,7 +110,7 @@
                     @foreach($materiaSerie as $ms)
                     <div class="card">
                         <div class="box" >
-                            <a href="{{$ms->conteudo}}">
+                            <a href="/conteudo">
                                 <div class="nomeMateria">
                                   <p>{{$ms->tituloConteudo}}</p>
                                 </div>

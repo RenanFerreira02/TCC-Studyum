@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\ConteudoMateria;
+use App\Models\MateriaSerie;
 
 class ConteudoMateriaController extends Controller
 {
@@ -12,12 +13,31 @@ class ConteudoMateriaController extends Controller
 
         $materiaSerie = ConteudoMateria::where('idMateriaSerie', '=', $id)->get();
 
-        $nomeMateriaSerie = ConteudoMateria::ConteudoMateria()
-        ->join('materias', 'materias.idMateria', '=', 'materia_serie.idMateria')
-        ->join('series', 'series.idSerie', '=', 'materia_serie.idSerie')
-        ->where('conteudo_materia.idMateriaSerie', '=', $id)
-        ->first();
+        $nomeMateriaSerie = ConteudoMateria::ShowConteudo()
+            ->where('conteudo_materia.idMateriaSerie', '=', $id)
+            ->first();
 
         return view('subjects.subjectDisplay', ['materiaSerie' => $materiaSerie, 'nomeMateriaSerie' => $nomeMateriaSerie]);
+    }
+
+    public function addConteudo()
+    {
+        $conteudo = MateriaSerie::ShowMateriaSerie()->get();
+
+        return view('subjects.subjectAdd', ['conteudo' => $conteudo]);
+    }
+
+    public function store(Request $request) {
+
+        $conteudo = ConteudoMateria::create([
+            'idMateriaSerie' => $request->materiaSerie,
+            'tituloConteudo' => $request->titulo,
+            'conteudo' => $request->conteudo,
+        ]);
+
+        $conteudo->save();
+
+        return redirect('/materias');
+
     }
 }

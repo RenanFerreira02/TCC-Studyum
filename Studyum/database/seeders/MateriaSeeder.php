@@ -17,37 +17,7 @@ class MateriaSeeder extends Seeder
 
             [
                 'idMateria' => null,
-                'materia' => 'Matemática'
-            ],
-
-            [
-                'idMateria' => null,
-                'materia' => 'Português'
-            ],
-
-            [
-                'idMateria' => null,
-                'materia' => 'História'
-            ],
-
-            [
-                'idMateria' => null,
-                'materia' => 'Geografia'
-            ],
-
-            [
-                'idMateria' => null,
                 'materia' => 'Biologia'
-            ],
-
-            [
-                'idMateria' => null,
-                'materia' => 'Física'
-            ],
-
-            [
-                'idMateria' => null,
-                'materia' => 'Sociologia'
             ],
 
             [
@@ -57,7 +27,42 @@ class MateriaSeeder extends Seeder
 
             [
                 'idMateria' => null,
+                'materia' => 'Física'
+            ],
+
+            [
+                'idMateria' => null,
+                'materia' => 'Geografia'
+            ],
+
+            [
+                'idMateria' => null,
+                'materia' => 'História'
+            ],
+
+            [
+                'idMateria' => null,
+                'materia' => 'Língua Portuguesa'
+            ],
+
+            [
+                'idMateria' => null,
+                'materia' => 'Matemática'
+            ],
+
+            [
+                'idMateria' => null,
                 'materia' => 'Química'
+            ],
+
+            [
+                'idMateria' => null,
+                'materia' => 'Sociologia'
+            ],
+
+            [
+                'idMateria' => null,
+                'materia' => 'Inglês'
             ],
         ]);
     }

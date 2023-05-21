@@ -93,11 +93,6 @@
             </nav>
             <!-- NAVBAR -->
 
-            <div class="underConstruction">
-                <i class='bx bxs-wrench bx-lg' ></i>
-                <p>Página em construção</p>
-            </div>
-
             <!-- MAIN -->
             <main>
                 <div class="head-title">

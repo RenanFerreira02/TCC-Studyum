@@ -111,6 +111,11 @@
                     <div class="card">
                         <div class="box"></div>
                     </div>
+                    @foreach($conteudo as $c)
+                    <p>
+                        {{$c->conteudo}}
+                    </p>
+                    @endforeach
 
                   
                 </div>

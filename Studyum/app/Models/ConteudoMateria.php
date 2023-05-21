@@ -12,8 +12,15 @@ class ConteudoMateria extends Model
 
     protected $table = 'conteudo_materia';
 
-    public function scopeConteudoMateria(Builder $query): void
+    protected $fillable = ['idMateriaSerie', 'tituloConteudo', 'conteudo'];
+
+    public $timestamps = false;
+
+    public function scopeShowConteudo(Builder $query): void
     {
-        $query->join('materia_serie', 'conteudo_materia.idMateriaSerie', '=', 'materia_serie.idMateriaSerie');
+        $query
+            ->join('materia_serie', 'conteudo_materia.idMateriaSerie', '=', 'materia_serie.idMateriaSerie')
+            ->join('materias', 'materias.idMateria', '=', 'materia_serie.idMateria')
+            ->join('series', 'series.idSerie', '=', 'materia_serie.idSerie');
     }
 }

@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id('idConteudoMateria');
             $table->integer('idMateriaSerie')->index();
             $table->string('tituloConteudo');
+            $table->string('conteudo');
         });
     }
 
