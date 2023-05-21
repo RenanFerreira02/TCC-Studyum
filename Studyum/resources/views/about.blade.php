@@ -26,13 +26,20 @@
                         <li><a href="/" class="home-sobre">Home</a></li>
 
                         <li>
-                            <a href="{{ route('login') }}" class="entrar-cadastrar">Entrar</a>
+                            <a
+                                href="{{ route('login') }}"
+                                class="entrar-cadastrar"
+                                >Entrar</a
+                            >
                         </li>
 
                         <li>
-                            <a href="{{ route('register') }}" class="entrar-cadastrar"
-                                > Cadastrar </a
+                            <a
+                                href="{{ route('register') }}"
+                                class="entrar-cadastrar"
                             >
+                                Cadastrar
+                            </a>
                         </li>
                     </ul>
                 </nav>
@@ -86,9 +93,9 @@
                                 <p>
                                     Durante a elaboração do projeto, foi levado
                                     em consideração o ambiente da ETEC e como
-                                    nós alunos poderíamos ajudar a
-                                    contribuir no aprendizado de todos. Conheça
-                                    um pouco sobre cada desenvolvedor abaixo.
+                                    nós alunos poderíamos ajudar a contribuir no
+                                    aprendizado de todos. Conheça um pouco sobre
+                                    cada desenvolvedor abaixo.
                                 </p>
                             </div>
 

@@ -218,48 +218,55 @@ body {
     color: var(--dark);
 }
 
-.content-test {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.content-test p,
-.content-test a {
-    width: 50%;
-}
-
-.content-test p {
-    margin-top: 10%;
-    text-align: justify;
-}
-
-.content-test a {
-    margin-top: 2%;
-}
-
-.box a {
-    color: white;
-}
-
 /* MAIN */
 /* CONTENT */
 
-main {
-    filter: blur(7px);
-}
+.serie {
+    margin: 30px;
 
-.underConstruction {
-    text-align: center;
-    color: var(--dark);
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}
+.container2 {
     position: absolute;
-    left: 430px;
-    top: 350px;
+    right: 0;
+    width: 80vw;
+    padding: 5px;
 }
 
-.underConstruction p {
-    font-size: 50px;
+.container2 .content2 .cards {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.container2 .content2 .cards .card {
+    width: 250px;
+    height: 185px;
+    background: var(--light-blue);
+    margin: 20px 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+.box {
+    text-align: center;
+}
+
+.box p {
     font-family: var(--font-title);
+    font-size: 26px;
+    color: white;
 }
 
 @media screen and (max-width: 768px) {

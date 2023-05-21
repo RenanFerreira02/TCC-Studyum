@@ -15,6 +15,10 @@
                     <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
                         {{ __('Dashboard') }}
                     </x-nav-link>
+
+                    <x-nav-link :href="route('materias')" :active="request()->routeIs('dashboard')">
+                        {{ __('Matérias') }}
+                    </x-nav-link>
                 </div>
             </div>
 
@@ -35,7 +39,7 @@
 
                     <x-slot name="content">
                         <x-dropdown-link :href="route('profile.edit')">
-                            {{ __('Profile') }}
+                            {{ __('Perfil') }}
                         </x-dropdown-link>
 
                         <!-- Authentication -->
