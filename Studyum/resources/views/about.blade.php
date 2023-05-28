@@ -29,8 +29,9 @@
                             <a
                                 href="{{ route('login') }}"
                                 class="entrar-cadastrar"
-                                >Entrar</a
                             >
+                                Entrar
+                            </a>
                         </li>
 
                         <li>

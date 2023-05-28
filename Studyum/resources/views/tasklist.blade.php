@@ -8,6 +8,7 @@
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="{{url('css/platform/platform.css')}}" />
         <link rel="stylesheet" href="{{url('css/platform/tasks.css')}}" />
         <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
         <title>Lista de Tarefas</title>
@@ -51,7 +52,7 @@
 
             <ul class="side-menu">
                 <li>
-                    <a href="#">
+                    <a href="/profile">
                         <i class="bx bxs-cog bx-sm bx-spin-hover"></i>
 
                         <span class="text">Configurações</span>
@@ -59,11 +60,19 @@
                 </li>
 
                 <li>
-                    <a href="#" class="logout">
-                        <i class="bx bxs-log-out-circle bx-sm"></i>
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
 
-                        <span class="text">Logout</span>
-                    </a>
+                        <a
+                            href="route('logout')"
+                            class="logout"
+                            onclick="event.preventDefault(); this.closest('form').submit();"
+                        >
+                            <i class="bx bxs-log-out-circle bx-sm"></i>
+
+                            <span class="text">Log out</span>
+                        </a>
+                    </form>
                 </li>
             </ul>
         </section>
@@ -76,7 +85,7 @@
                 <div class="left">
                     <i class="bx bx-menu bx-sm"></i>
 
-                    <span>Bem vindo, Renan</span>
+                    <span>Bem vindo, {{ Auth::user()->name }}</span>
                 </div>
 
                 <div class="right">
@@ -86,7 +95,7 @@
                         <span class="num">8</span>
                     </a>
 
-                    <a href="#" class="profile">
+                    <a href="/profile" class="profile">
                         <img src="{{url('images/templates/Avatar.svg')}}" />
                     </a>
                 </div>
@@ -97,7 +106,7 @@
             <main>
                 <div class="head-title">
                     <div class="left">
-                        <h1></h1>
+                        <h1>Lista de tarefas</h1>
                     </div>
                 </div>
             </main>
@@ -187,6 +196,6 @@
             </div>
         </section>
 
-        <script src="{{url('scripts/dashboard/listadetarefas.js')}}"></script>
+        <script src="{{url('scripts/dashboard/sidebar.js')}}"></script>
     </body>
 </html>

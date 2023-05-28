@@ -8,15 +8,17 @@
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="{{url('css/platform/platform.css')}}" />
         <link rel="stylesheet" href="{{url('css/platform/forum.css')}}" />
         <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
         <title>Forum</title>
     </head>
     <body>
         <!-- SIDEBAR -->
         <section id="sidebar">
             <ul class="side-menu top">
-                <li class>
+                <li>
                     <a href="/dashboard">
                         <i class="bx bxs-dashboard bx-sm"></i>
 
@@ -51,7 +53,7 @@
 
             <ul class="side-menu">
                 <li>
-                    <a href="#">
+                    <a href="/profile">
                         <i class="bx bxs-cog bx-sm bx-spin-hover"></i>
 
                         <span class="text">Configurações</span>
@@ -59,11 +61,19 @@
                 </li>
 
                 <li>
-                    <a href="#" class="logout">
-                        <i class="bx bxs-log-out-circle bx-sm"></i>
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
 
-                        <span class="text">Logout</span>
-                    </a>
+                        <a
+                            href="route('logout')"
+                            class="logout"
+                            onclick="event.preventDefault(); this.closest('form').submit();"
+                        >
+                            <i class="bx bxs-log-out-circle bx-sm"></i>
+
+                            <span class="text">Log out</span>
+                        </a>
+                    </form>
                 </li>
             </ul>
         </section>
@@ -76,7 +86,7 @@
                 <div class="left">
                     <i class="bx bx-menu bx-sm"></i>
 
-                    <span>Bem vindo, Renan</span>
+                    <span>Bem vindo, {{ Auth::user()->name }}</span>
                 </div>
 
                 <div class="right">
@@ -86,7 +96,7 @@
                         <span class="num">8</span>
                     </a>
 
-                    <a href="#" class="profile">
+                    <a href="/profile" class="profile">
                         <img src="{{url('images/templates/Avatar.svg')}}" />
                     </a>
                 </div>
@@ -97,86 +107,54 @@
             <main>
                 <div class="head-title">
                     <div class="left">
-                        <h1></h1>
+                        <h1>Fórum</h1>
                     </div>
+                </div>
+
+                <div class="m-auto mt-1 grid w-4/5 gap-4 md:grid-cols-2 lg:grid-cols-2">
+                    <div class="w-[110%]">
+                        <div class="flex justify-end rounded-[20px] bg-white shadow-xl">
+                            <a href="">
+                                <img
+                                    class="w-[40px] pr-[10px] py-[15px]"
+                                    src="{{url('images/dashboard/button adicionar.png')}}"
+                                />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="topics-container row-span-6 w-3/4 ml-[45%] bg-white rounded-[20px] flex justify-center  shadow-xl">
+                        <h1 class="assuntos mt-2">Assuntos</h1>
+                    </div>
+
+                    <div class="bg-white flex rounded-[10px] w-[110%] shadow-xl">
+                        <div class="w-2/3 p-3">
+                            <img src="{{url('images/templates/Avatar.svg')}}" alt="">
+                        </div>
+                        <p class="py-3 pr-5 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis itaque commodi voluptatem facere officiis corrupti, ipsa nulla a esse suscipit repellat vero voluptatibus qui earum adipisci error maxime dolore id!</p>
+                    </div>
+
+                    <div class="bg-white flex rounded-[10px] w-[110%] shadow-xl">
+                        <div class="w-2/3 p-3">
+                            <img src="{{url('images/templates/Avatar.svg')}}" alt="">
+                        </div>
+                        <p class="py-3 pr-5 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis itaque commodi voluptatem facere officiis corrupti, ipsa nulla a esse suscipit repellat vero voluptatibus qui earum adipisci error maxime dolore id!</p>
+                    </div>
+
+                    <div class="bg-white flex rounded-[10px] w-[110%] shadow-xl">
+                        <div class="w-2/3 p-3">
+                            <img src="{{url('images/templates/Avatar.svg')}}" alt="">
+                        </div>
+                        <p class="py-3 pr-5 text-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis itaque commodi voluptatem facere officiis corrupti, ipsa nulla a esse suscipit repellat vero voluptatibus qui earum adipisci error maxime dolore id!</p>
+                    </div>
+
+                                  
                 </div>
             </main>
             <!-- MAIN -->
         </section>
         <!-- CONTENT -->
 
-        <section class="container">
-            <div class="content1">
-                <div class="cards">
-                    <div class="card">
-                        <a href="">
-                            <img
-                                class="add"
-                                src="{{url('images/dashboard/button adicionar.png')}}"
-                            />
-                        </a>
-                        <div class="box"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="container2">
-            <div class="content2">
-                <div class="cards">
-                    <div class="card">
-                        <div class="box">
-                            <h1 class="assuntos">Assuntos</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="container3">
-            <div class="content3">
-                <div class="cards">
-                    <div class="card">
-                        <a href="profile">
-                            <img
-                                src="{{url('images/dashboard/Avatar.svg')}}"
-                                alt=""
-                            />
-                        </a>
-                        <div class="box">
-                            <h3>Titulo do Post</h3>
-                            <br />
-                            <p>
-                                Estou com dúvida quanto à uma regra de fatoração
-                                pela colocação de um fator comum em evidência.
-                                Eu quero saber qual é o sinal que deve ser
-                                colocado em evidencia junto com o fator comum.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <a href="#">
-                            <img
-                                class="profile2"
-                                src="{{url('images/dashboard/Avatar.svg')}}"
-                                alt=""
-                            />
-                        </a>
-                        <div class="box">
-                            <h3>Titulo do Post</h3>
-                            <br />
-                            <p>
-                                Como faço para medir o comprimento de uma
-                                circunferência? Como faço o cálculo de um
-                                diâmetro? O que é o raio da circunferência?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <script src="{{url('scripts/dashboard/forum.js')}}"></script>
+        <script src="{{url('scripts/dashboard/sidebar.js')}}"></script>
     </body>
 </html>

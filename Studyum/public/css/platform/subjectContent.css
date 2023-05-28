@@ -200,10 +200,10 @@ body {
 #content main {
     width: 100%;
     padding: 36px 24px;
-    font-family: var(--font-title);
     max-height: calc(100vh - 56px);
     overflow-y: auto;
 }
+
 #content main .head-title {
     display: flex;
     align-items: center;
@@ -211,109 +211,21 @@ body {
     grid-gap: 16px;
     flex-wrap: wrap;
 }
+
 #content main .head-title .left h1 {
     font-size: 36px;
     font-weight: 600;
     margin-bottom: 10px;
+    font-family: var(--font-title);
     color: var(--dark);
 }
 
-/* MAIN */
-/* CONTENT */
-
-.serie {
-    margin: 30px;
-    font-family: var(--font-title);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-
-    color: #000000;
-}
-.container2 {
-    position: absolute;
-    right: 0;
-    width: 80vw;
-    padding: 5px;
-}
-
-.container2 .content2 .cards {
-    padding: 10px 15px;
+.conteudo_materia {
     display: flex;
-    align-items: center;
-
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.container2 .content2 .cards .card {
-    width: 250px;
-    height: 185px;
-    background: var(--light-blue);
-    margin: 20px 10px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
-}
-
-.box {
-    text-align: center;
-}
-
-.box p {
-    font-family: var(--font-title);
-    font-size: 26px;
-    color: white;
-}
-
-.box i {
-    color: var(--light);
-}
-
-@media screen and (max-width: 768px) {
-    #sidebar {
-        width: 200px;
-    }
-
-    #content {
-        width: calc(100% - 60px);
-        left: 200px;
-    }
-
-    #content nav .nav-link {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    #content nav form .form-input input {
-        display: none;
-    }
-
-    #content nav form .form-input button {
-        width: auto;
-        height: auto;
-        background: transparent;
-        border-radius: none;
-        color: var(--dark);
-    }
-
-    #content nav form.show .form-input input {
-        display: block;
-        width: 100%;
-    }
-    #content nav form.show .form-input button {
-        width: 36px;
-        height: 100%;
-        border-radius: 0 36px 36px 0;
-        color: var(--light);
-        background: var(--red);
-    }
-
-    #content nav form.show ~ .notification,
-    #content nav form.show ~ .profile {
-        display: none;
-    }
+.content2 {
+    margin-top: 3%;
+    width: 60%;
 }

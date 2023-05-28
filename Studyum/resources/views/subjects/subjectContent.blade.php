@@ -3,11 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="{{ url('css/platform/subjects.css') }}" />
-        <link rel="stylesheet" href="{{ url('css/platform/dashboard.css') }}" />
+        <link rel="stylesheet" href="{{ url('css/platform/subjectContent.css') }}" />
         <link
             rel="stylesheet"
-            href="{{ url('css/templates/css-reset.css') }}"
+            href="{{ url('css/templates/platform-reset.css') }}"
         />
         <link
             rel="stylesheet"
@@ -36,7 +35,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="/forum">
                         <i class="bx bx-conversation bx-sm"></i>
 
                         <span class="text">Fórum</span>
@@ -44,7 +43,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="/tarefas">
                         <i class="bx bx-task bx-sm"></i>
 
                         <span class="text">Lista de Tarefas</span>
@@ -72,7 +71,7 @@
                         >
                             <i class="bx bxs-log-out-circle bx-sm"></i>
 
-                            <span class="text">Logout</span>
+                            <span class="text">Log out</span>
                         </a>
                     </form>
                 </li>
@@ -84,7 +83,7 @@
                 <div class="left">
                     <i class="bx bx-menu bx-sm"></i>
 
-                    <span>Bem vindo, Renan</span>
+                    <span>Bem vindo, {{ Auth::user()->name }}</span>
                 </div>
 
                 <div class="right">
@@ -105,22 +104,22 @@
                     <div class="left">
                         @foreach ($conteudoMateria as $sc)
                         <h1>
-                            {{ $nomeMateriaSerie->materia }} - {{
-                            $nomeMateriaSerie->serie }} - {{ $sc->tituloConteudo
-                            }}
+                            {{ $nomeMateriaSerie->materia }} - 
+                            {{ $nomeMateriaSerie->serie }} - 
+                            {{ $sc->tituloConteudo }}
                         </h1>
                         @endforeach
                     </div>
                 </div>
+
+                <div class="conteudo_materia">
+                    @foreach ($conteudoMateria as $sc)
+                    <div class="content2">{!! $sc->conteudo !!}</div>
+                    @endforeach
+                </div>
             </main>
         </section>
 
-        <section class="container2">
-            @foreach ($conteudoMateria as $sc)
-            <div class="content2">{{ $sc->conteudo }}</div>
-            @endforeach
-        </section>
-        <script src="{{ url('scripts/dashboard/materias.js') }}"></script>
-        <script src="{{ url('scripts/dashboard/dashboard.js') }}"></script>
+        <script src="{{ url('scripts/dashboard/sidebar.js') }}"></script>
     </body>
 </html>

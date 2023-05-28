@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{{ url('css/platform/platform.css') }}" />
         <link rel="stylesheet" href="{{ url('css/platform/subjects.css') }}" />
         <link
             rel="stylesheet"
@@ -105,33 +106,36 @@
                         <h1>Matérias</h1>
                     </div>
                 </div>
+
+                <div class="container2">
+                    <div class="content2">
+                        @foreach ($materias_series as $ms)
+                        <h1 class="serie">{{ $ms->serie }}</h1>
+                        <div class="cards">
+                            @foreach ($ms->materias as $materia)
+                            <div class="card">
+                                <div class="box" label="materia">
+                                    <a href="/materias/{{ $materia->idMateriaSerie }}">
+                                        <div class="nomeMateria">
+                                            {{--
+                                            <p>{{$materia-> idMateriaSerie}}</p>
+                                            --}}
+                                            <p>{{ $materia->materia }}</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            @endforeach
+                        </div>
+                        @endforeach
+                    </div>
+                </div>
             </main>
         </section>
 
         <section id="content" class="container2">
-            <div class="content2">
-                @foreach ($materias_series as $ms)
-                <h1 class="serie">{{ $ms->serie }}</h1>
-                <div class="cards">
-                    @foreach ($ms->materias as $materia)
-                    <div class="card">
-                        <div class="box" label="materia">
-                            <a href="/materias/{{ $materia->idMateriaSerie }}">
-                                <div class="nomeMateria">
-                                    {{--
-                                    <p>{{$materia-> idMateriaSerie}}</p>
-                                    --}}
-                                    <p>{{ $materia->materia }}</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    @endforeach
-                </div>
-                @endforeach
-            </div>
+            
         </section>
-        <script src="{{ url('scripts/dashboard/materias.js') }}"></script>
-        <script src="{{ url('scripts/dashboard/dashboard.js') }}"></script>
+        <script src="{{ url('scripts/dashboard/sidebar.js') }}"></script>
     </body>
 </html>

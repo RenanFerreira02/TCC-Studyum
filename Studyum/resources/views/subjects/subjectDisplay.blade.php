@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="{{ url('css/platform/conteudos.css') }}" />
+        <link rel="stylesheet" href="{{ url('css/platform/platform.css') }}" />
+        <link rel="stylesheet" href="{{ url('css/platform/subjects.css') }}" />
         <link
             rel="stylesheet"
             href="{{ url('css/templates/css-reset.css') }}"
@@ -35,7 +36,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="/forum">
                         <i class="bx bx-conversation bx-sm"></i>
 
                         <span class="text">Fórum</span>
@@ -43,7 +44,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="/tarefas">
                         <i class="bx bx-task bx-sm"></i>
 
                         <span class="text">Lista de Tarefas</span>
@@ -71,7 +72,7 @@
                         >
                             <i class="bx bxs-log-out-circle bx-sm"></i>
 
-                            <span class="text">Logout</span>
+                            <span class="text">Log out</span>
                         </a>
                     </form>
                 </li>
@@ -140,7 +141,7 @@
                 </div>
             </div>
         </section>
-        <script src="{{ url('scripts/dashboard/materias.js') }}"></script>
-        <script src="{{ url('scripts/dashboard/dashboard.js') }}"></script>
+
+        <script src="{{ url('scripts/dashboard/sidebar.js') }}"></script>
     </body>
 </html>

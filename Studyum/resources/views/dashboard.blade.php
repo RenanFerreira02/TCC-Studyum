@@ -8,6 +8,7 @@
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
             rel="stylesheet"
         />
+        <link rel="stylesheet" href="{{url('css/platform/platform.css')}}" />
         <link rel="stylesheet" href="{{url('css/platform/dashboard.css')}}" />
         <link rel="stylesheet" href="{{url('css/templates/css-reset.css')}}" />
         <title>Dashboard</title>
@@ -140,6 +141,6 @@
         </section>
         <!-- CONTENT -->
 
-        <script src="{{url('scripts/dashboard/dashboard.js')}}"></script>
+        <script src="{{url('scripts/dashboard/sidebar.js')}}"></script>
     </body>
 </html>

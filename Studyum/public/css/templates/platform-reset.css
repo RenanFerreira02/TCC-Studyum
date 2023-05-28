@@ -1,0 +1,35 @@
+/* Importação das fontes do site */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* Raleway - Fonte para títulos */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"); /* Montserrat - Fonte para textos*/
+
+:root {
+    --font-title: "Raleway", sans-serif;
+    --font-text: "Montserrat", sans-serif;
+    --dark-blue: #006989;
+    --light-blue: #007090;
+    --light: #f9f9f9;
+    --dark: #342e37;
+    --grey: #eee;
+    /* --blue: #3c91e6;
+    --light-blue: #cfe8ff;
+    --dark-grey: #aaaaaa; */
+    --red: #db504a;
+    /* --yellow: #ffce26;
+    --light-yellow: #fff2c6;
+    --orange: #fd7238;
+    --light-orange: #ffe0d3; */
+}
+
+/* Remove a margem e o preenchimento padrão */
+#sidebar ul,
+#sidebar li,
+nav,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove a decoração de link padrão */
+a {
+    text-decoration: none;
+}

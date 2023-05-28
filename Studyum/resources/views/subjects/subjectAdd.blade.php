@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="{{ url('css/platform/platform.css') }}" />
         <link rel="stylesheet" href="{{ url('css/platform/subjects.css') }}" />
         <link
             rel="stylesheet"
@@ -35,7 +36,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="/forum">
                         <i class="bx bx-conversation bx-sm"></i>
 
                         <span class="text">Fórum</span>
@@ -43,7 +44,7 @@
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="/tarefas">
                         <i class="bx bx-task bx-sm"></i>
 
                         <span class="text">Lista de Tarefas</span>
@@ -71,7 +72,7 @@
                         >
                             <i class="bx bxs-log-out-circle bx-sm"></i>
 
-                            <span class="text">Logout</span>
+                            <span class="text">Log out</span>
                         </a>
                     </form>
                 </li>
@@ -105,37 +106,61 @@
                         <h1>Inserir Conteúdo</h1>
                     </div>
                 </div>
+
+                <div class="form">
+                    <form action="insertConteudo" method="post">
+                        @csrf
+                        <div class="cabecalho">
+                            <div class="titulo">
+                                <label class="input-label" for="titulo"
+                                    >Título do conteúdo:</label
+                                >
+    
+                                <input
+                                    class="input-box"
+                                    type="text"
+                                    id="titulo"
+                                    name="titulo"
+                                    required
+                                />
+                            </div>
+    
+                            <div class="materiaSerie">
+                                <label class="input-label" for="materiaSerie"
+                                    >Matéria/Série:</label
+                                >
+    
+                                <select
+                                    class="input-box"
+                                    id="materiaSerie"
+                                    name="materiaSerie"
+                                >
+                                    @foreach ($conteudo as $c)
+    
+                                    <option
+                                        class="input-label"
+                                        value="{{ $c->idMateriaSerie }}"
+                                    >
+                                        {{ $c->materia }} - {{ $c->serie }}
+                                    </option>
+    
+                                    @endforeach
+                                </select>
+                            </div>
+                        </div>
+    
+                        <x-tinymce.tinymce-editor />
+    
+                        <input type="submit" value="Enviar conteúdo"
+                        action='{{__('Insert Conteudo') }}'>
+                    </form>
+                </div>
             </main>
         </section>
 
-        <section id="content" class="add-form">
-            <form id="content" action="insertConteudo" method="post">
-                @csrf
-                <label for="titulo">Título do conteúdo:</label>
 
-                <input type="text" id="titulo" name="titulo" required />
-
-                <label for="tipo">Matéria/Série:</label>
-
-                <select id="tipo" name="materiaSerie">
-                    @foreach ($conteudo as $c)
-
-                    <option value="{{ $c->idMateriaSerie }}">
-                        {{ $c->materia }} - {{ $c->serie }}
-                    </option>
-
-                    @endforeach
-                </select>
-
-                <x-tinymce.tinymce-editor />
-
-                <input type="submit" value="Enviar conteúdo"
-                action='{{__('Insert Conteudo') }}'>
-            </form>
-        </section>
-
-        <script src="{{ url('scripts/dashboard/materias.js') }}"></script>
-        <script src="{{ url('scripts/dashboard/dashboard.js') }}"></script>
+        <script src="{{ url('scripts/dashboard/sidebar.js') }}"></script>
         <x-tinymce.tinymce-config />
+
     </body>
 </html>
