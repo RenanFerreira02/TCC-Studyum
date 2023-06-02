@@ -58,4 +58,17 @@ class ConteudoMateriaController extends Controller
 
         return view('subjects.subjectContent', ['conteudoMateria' => $conteudoMateria, 'nomeMateriaSerie' => $nomeMateriaSerie]);
     }
+
+    public function edit($id, $idConteudoEdit) {
+
+        $conteudo = MateriaSerie::ShowMateriaSerie()->get();
+
+        $conteudoEdit = conteudoMateria::where('idMateriaSerie', '=', $id)
+        ->where('idConteudoMateria', '=', $idConteudoEdit)
+        ->first();
+
+        return view('subjects.subjectEdit', ['conteudo' => $conteudo, 'conteudoEdit' => $conteudoEdit]);
+    }
+
+    
 }

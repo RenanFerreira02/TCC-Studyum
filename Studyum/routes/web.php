@@ -48,6 +48,10 @@ Route::middleware('auth')->group(function () {
     Route::post('insertConteudo', [ConteudoMateriaController::class, 'store']);
 
     Route::get('/materias/{id}/{idConteudo}', [ConteudoMateriaController::class, 'conteudo']);
+
+    Route::get('/materias/{id}/{idConteudo}/editar', [ConteudoMateriaController::class, 'edit']);
+
+    Route::put('update/{idConteudoMateria}', [ConteudoMateriaController::class, 'update'])->name('updateConteudo');
 });
 
 Route::middleware('auth')->group(function () {

@@ -13,7 +13,7 @@
             rel="stylesheet"
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
         />
-        <title>Adicionar Conteúdo</title>
+        <title>Editar Conteúdo</title>
     </head>
 
     <body>
@@ -103,40 +103,43 @@
             <main>
                 <div class="head-title">
                     <div class="left">
-                        <h1>Inserir Conteúdo</h1>
+                        <h1>Editar Conteúdo</h1>
                     </div>
                 </div>
 
                 <div class="form">
-                    <form action="insertConteudo" method="post">
+                    <form action='/update/{{$conteudoEdit->idConteudoMateria}}' method="post">
                         @csrf
+                        @method('PUT')
+                        
                         <div class="cabecalho">
                             <div class="titulo">
                                 <label class="input-label" for="titulo">
                                     Título do conteúdo:
                                 </label>
-
+                                
                                 <input
                                     class="input-box"
                                     type="text"
                                     id="titulo"
                                     name="titulo"
+                                    value="{{$conteudoEdit -> tituloConteudo}}"
                                     required
-                                />
-                            </div>
-
-                            <div class="materiaSerie">
-                                <label class="input-label" for="materiaSerie">
-                                    Matéria/Série:
-                                </label>
-
-                                <select
+                                    />
+                                </div>
+                                
+                                <div class="materiaSerie">
+                                    <label class="input-label" for="materiaSerie">
+                                        Matéria/Série:
+                                    </label>
+                                    
+                                    <select
                                     class="input-box"
                                     id="materiaSerie"
                                     name="materiaSerie"
-                                >
+                                    >
+                                    
                                     @foreach ($conteudo as $c)
-
                                     <option
                                         class="input-label"
                                         value="{{ $c->idMateriaSerie }}"
@@ -149,10 +152,9 @@
                             </div>
                         </div>
 
-                        <x-tinymce.tinymce-editor />
+                        <textarea id="myeditorinstance" name="conteudo"> {{$conteudoEdit-> conteudo}} </textarea>
 
-                        <input type="submit" value="Enviar conteúdo"
-                        action='{{__('Insert Conteudo') }}'>
+                        <input type="submit" value="Enviar conteúdo">
                     </form>
                 </div>
             </main>

@@ -3,15 +3,18 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="{{ url('css/platform/subjectContent.css') }}" />
         <link
             rel="stylesheet"
             href="{{ url('css/templates/platform-reset.css') }}"
         />
+
+        <link rel="stylesheet" href="{{ url('css/platform/subjectContent.css') }}" />
+        
         <link
             rel="stylesheet"
             href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
         />
+        
         <title>Conteúdo</title>
     </head>
 
@@ -113,10 +116,34 @@
                 </div>
 
                 <div class="conteudo_materia">
-                    @foreach ($conteudoMateria as $sc)
-                    <div class="content2">{!! $sc->conteudo !!}</div>
-                    @endforeach
+                    <div class="content2">
+                        @foreach ($conteudoMateria as $sc)
+                        <div class="conteudo">
+                            {!! $sc->conteudo !!}
+                        </div>
+                        @endforeach
+
+                        <div class="update-delete">
+                            @foreach($conteudoMateria as $sc)
+                            <div class="update">
+                                <a href="/materias/{{ $sc->idMateriaSerie }}/{{ $sc->idConteudoMateria }}/editar">
+                                    <i class='bx bxs-edit bx-md'></i>
+                                </a>
+                            </div>
+
+                            <div class="delete">
+                                <a href="">
+                                    <i class='bx bxs-trash bx-md' ></i>
+                                </a>
+                            </div>
+                            @endforeach
+                    </div>
+
+                    
                 </div>
+                </div>
+
+                
             </main>
         </section>
 

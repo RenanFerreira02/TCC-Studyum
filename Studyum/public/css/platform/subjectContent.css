@@ -222,10 +222,44 @@ body {
 
 .conteudo_materia {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .content2 {
     margin-top: 3%;
     width: 60%;
+}
+
+.update-delete {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.update i {
+    color: var(--dark-blue);
+}
+
+.delete i {
+    color: var(--red);
+}
+
+@keyframes flash {
+    0% {
+        color: #ca2f28;
+    }
+    50% {
+        color: #cf433d;
+    }
+    100% {
+        color: #d45852;
+    }
+}
+
+.delete i:hover {
+    animation-name: flash;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
