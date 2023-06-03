@@ -20,6 +20,24 @@ class ConteudoMateriaController extends Controller
         return view('subjects.subjectDisplay', ['materiaSerie' => $materiaSerie, 'nomeMateriaSerie' => $nomeMateriaSerie]);
     }
 
+    public function conteudo($idMateriaSerie, $idConteudoMateria)
+    {
+
+        $conteudoMateria = ConteudoMateria::where('idMateriaSerie', '=', $idMateriaSerie)
+            ->where('id', '=', $idConteudoMateria)
+            ->get();
+
+        // dd($conteudoMateria);
+        // exit;
+
+        $nomeMateriaSerie = ConteudoMateria::ShowConteudo()
+            ->where('conteudo_materia.idMateriaSerie', '=', $idMateriaSerie)
+            ->first();
+
+
+        return view('subjects.subjectContent', ['conteudoMateria' => $conteudoMateria, 'nomeMateriaSerie' => $nomeMateriaSerie]);
+    }
+
     public function addConteudo()
     {
         $conteudo = MateriaSerie::ShowMateriaSerie()->get();
@@ -41,34 +59,47 @@ class ConteudoMateriaController extends Controller
         return redirect('/materias');
     }
 
-    public function conteudo($id, $idConteudo)
+    public function showEdit($idMateriaSerie, $idconteudoMateria)
+    {
+        $conteudoMateria = ConteudoMateria::ShowConteudo()
+            ->where('conteudo_materia.idMateriaSerie', '=', $idMateriaSerie)
+            ->where('id', '=', $idconteudoMateria)
+            ->first();
+
+        $materiaSerie = MateriaSerie::ShowMateriaSerie()->get();
+
+        return view('subjects.subjectEdit', ['conteudoMateria' => $conteudoMateria, 'materiaSerie' => $materiaSerie]);
+    }
+
+    public function update(Request $request, $idconteudoMateria)
     {
 
-        $conteudoMateria = ConteudoMateria::where('idMateriaSerie', '=', $id)
-            ->where('idConteudoMateria', '=', $idConteudo)
-            ->get();
-
-        // dd($conteudoMateria);
-        // exit;
-
-        $nomeMateriaSerie = ConteudoMateria::ShowConteudo()
-            ->where('conteudo_materia.idMateriaSerie', '=', $id)
+        $conteudoMateria = ConteudoMateria::ShowConteudo()
+            ->where('id', '=', $idconteudoMateria)
             ->first();
 
 
-        return view('subjects.subjectContent', ['conteudoMateria' => $conteudoMateria, 'nomeMateriaSerie' => $nomeMateriaSerie]);
+        $conteudo = ConteudoMateria::find($idconteudoMateria);
+
+        $conteudo->idMateriaSerie = $request->materiaSerie;
+        $conteudo->tituloConteudo = $request->titulo;
+        $conteudo->conteudo = $request->conteudo;
+
+        $conteudo->save();
+
+        return redirect()->route('conteudo', ['idMateriaSerie' => $conteudoMateria->idMateriaSerie, 'idConteudoMateria' => $conteudoMateria->id]);
     }
 
-    public function edit($id, $idConteudoEdit) {
+    public function destroy($idconteudoMateria)
+    {
+        $conteudoMateria = ConteudoMateria::ShowConteudo()
+            ->where('id', '=', $idconteudoMateria)
+            ->first();
 
-        $conteudo = MateriaSerie::ShowMateriaSerie()->get();
+        $conteudo = ConteudoMateria::find($idconteudoMateria);
 
-        $conteudoEdit = conteudoMateria::where('idMateriaSerie', '=', $id)
-        ->where('idConteudoMateria', '=', $idConteudoEdit)
-        ->first();
+        $conteudo->delete();
 
-        return view('subjects.subjectEdit', ['conteudo' => $conteudo, 'conteudoEdit' => $conteudoEdit]);
+        return redirect()->route('conteudoMateria', ['idMateriaSerie' => $conteudoMateria->idMateriaSerie]);
     }
-
-    
 }

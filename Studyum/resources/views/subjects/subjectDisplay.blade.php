@@ -119,7 +119,7 @@
                     <div class="card">
                         <div class="box">
                             <a
-                                href="/materias/{{ $ms->idMateriaSerie }}/{{ $ms->idConteudoMateria }}"
+                                href="/materias/{{ $ms->idMateriaSerie }}/{{ $ms->id }}"
                             >
                                 <div class="nomeMateria">
                                     <p>{{ $ms->tituloConteudo }}</p>

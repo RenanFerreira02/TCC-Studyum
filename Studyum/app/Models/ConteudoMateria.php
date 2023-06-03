@@ -12,7 +12,7 @@ class ConteudoMateria extends Model
 
     protected $table = 'conteudo_materia';
 
-    protected $fillable = ['idMateriaSerie', 'tituloConteudo', 'conteudo'];
+    protected $fillable = ['id', 'idMateriaSerie', 'tituloConteudo', 'conteudo'];
 
     public $timestamps = false;
 

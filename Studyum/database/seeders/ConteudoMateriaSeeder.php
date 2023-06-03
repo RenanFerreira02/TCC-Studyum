@@ -16,7 +16,7 @@ class ConteudoMateriaSeeder extends Seeder
         DB::table('conteudo_materia')->insert([
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 1,
                 'tituloConteudo' => 'Os Fundamentos da Hereditariedade',
                 'conteudo' => '<p>
@@ -143,7 +143,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 11,
                 'tituloConteudo' => 'Os Fundamentos da Hereditariedade',
                 'conteudo' => '<p>
@@ -270,7 +270,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 21,
                 'tituloConteudo' => 'Os Fundamentos da Hereditariedade',
                 'conteudo' => '<p>
@@ -397,7 +397,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 2,
                 'tituloConteudo' => 'Explorando os Fundamentos do Pensamento Crítico',
                 'conteudo' => '<p>
@@ -507,7 +507,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 12,
                 'tituloConteudo' => 'Explorando os Fundamentos do Pensamento Crítico',
                 'conteudo' => '<p>
@@ -617,7 +617,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 22,
                 'tituloConteudo' => 'Explorando os Fundamentos do Pensamento Crítico',
                 'conteudo' => '<p>
@@ -727,7 +727,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 3,
                 'tituloConteudo' => 'Explorando as Leis que Regem o Universo',
                 'conteudo' => '<p>
@@ -827,7 +827,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 13,
                 'tituloConteudo' => 'Explorando as Leis que Regem o Universo',
                 'conteudo' => '<p>
@@ -927,7 +927,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 23,
                 'tituloConteudo' => 'Explorando as Leis que Regem o Universo',
                 'conteudo' => '<p>
@@ -1027,7 +1027,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 4,
                 'tituloConteudo' => 'Descobrindo os Segredos do Nosso Planeta',
                 'conteudo' => '<p>
@@ -1142,7 +1142,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 14,
                 'tituloConteudo' => 'Descobrindo os Segredos do Nosso Planeta',
                 'conteudo' => '<p>
@@ -1257,7 +1257,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 24,
                 'tituloConteudo' => 'Descobrindo os Segredos do Nosso Planeta',
                 'conteudo' => '<p>
@@ -1372,7 +1372,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 5,
                 'tituloConteudo' => 'A Revolução Industrial',
                 'conteudo' => '<p>
@@ -1480,7 +1480,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 15,
                 'tituloConteudo' => 'A Revolução Industrial',
                 'conteudo' => '<p>
@@ -1588,7 +1588,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 25,
                 'tituloConteudo' => 'A Revolução Industrial',
                 'conteudo' => '<p>
@@ -1696,7 +1696,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 6,
                 'tituloConteudo' => 'Desvendando os Segredos da Comunicação',
                 'conteudo' => '<p>
@@ -1821,7 +1821,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 16,
                 'tituloConteudo' => 'Desvendando os Segredos da Comunicação',
                 'conteudo' => '<p>
@@ -1946,7 +1946,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 26,
                 'tituloConteudo' => 'Desvendando os Segredos da Comunicação',
                 'conteudo' => '<p>
@@ -2071,7 +2071,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 7,
                 'tituloConteudo' => 'Explorando os Números e as Formas do Universo',
                 'conteudo' => '<p>
@@ -2184,7 +2184,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 17,
                 'tituloConteudo' => 'Explorando os Números e as Formas do Universo',
                 'conteudo' => '<p>
@@ -2297,7 +2297,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 27,
                 'tituloConteudo' => 'Explorando os Números e as Formas do Universo',
                 'conteudo' => '<p>
@@ -2410,7 +2410,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 8,
                 'tituloConteudo' => 'Descobrindo os Elementos e as Transformações da Matéria',
                 'conteudo' => '<p>
@@ -2513,7 +2513,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 18,
                 'tituloConteudo' => 'Descobrindo os Elementos e as Transformações da Matéria',
                 'conteudo' => '<p>
@@ -2616,7 +2616,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 28,
                 'tituloConteudo' => 'Descobrindo os Elementos e as Transformações da Matéria',
                 'conteudo' => '<p>
@@ -2719,7 +2719,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 9,
                 'tituloConteudo' => 'Compreendendo as Relações Sociais e as Dinâmicas da Sociedade',
                 'conteudo' => '<p>
@@ -2830,7 +2830,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 19,
                 'tituloConteudo' => 'Compreendendo as Relações Sociais e as Dinâmicas da Sociedade',
                 'conteudo' => '<p>
@@ -2941,7 +2941,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 29,
                 'tituloConteudo' => 'Compreendendo as Relações Sociais e as Dinâmicas da Sociedade',
                 'conteudo' => '<p>
@@ -3052,7 +3052,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 10,
                 'tituloConteudo' => 'Unlocking the Language of Global Communication',
                 'conteudo' => '<p>
@@ -3147,7 +3147,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 20,
                 'tituloConteudo' => 'Unlocking the Language of Global Communication',
                 'conteudo' => '<p>
@@ -3242,7 +3242,7 @@ class ConteudoMateriaSeeder extends Seeder
             ],
 
             [
-                'idConteudoMateria' => null,
+                'id' => null,
                 'idMateriaSerie' => 30,
                 'tituloConteudo' => 'Unlocking the Language of Global Communication',
                 'conteudo' => '<p>

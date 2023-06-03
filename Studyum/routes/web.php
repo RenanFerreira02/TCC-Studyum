@@ -41,17 +41,19 @@ Route::get('/dashboard', function () {
 Route::middleware('auth')->group(function () {
     Route::get('/materias', [MateriaSerieController::class, 'subjectIndex'])->name('materias');
 
-    Route::get('/materias/{id}', [ConteudoMateriaController::class, 'conteudoMateria']);
+    Route::get('/materias/{idMateriaSerie}', [ConteudoMateriaController::class, 'conteudoMateria'])->name('conteudoMateria');
 
-    Route::get('/adicionar', [ConteudoMateriaController::class, 'addConteudo'])->name('conteudo');
+    Route::get('/materias/{idMateriaSerie}/{idConteudoMateria}', [ConteudoMateriaController::class, 'conteudo'])->name('conteudo');
+
+    Route::get('/adicionar', [ConteudoMateriaController::class, 'addConteudo'])->name('addConteudo');
 
     Route::post('insertConteudo', [ConteudoMateriaController::class, 'store']);
 
-    Route::get('/materias/{id}/{idConteudo}', [ConteudoMateriaController::class, 'conteudo']);
+    Route::get('/materias/{idMateriaSerie}/{idConteudoMateria}/editar', [ConteudoMateriaController::class, 'showEdit']);
 
-    Route::get('/materias/{id}/{idConteudo}/editar', [ConteudoMateriaController::class, 'edit']);
+    Route::put('/{idConteudoMateria}/editar', [ConteudoMateriaController::class, 'update']);
 
-    Route::put('update/{idConteudoMateria}', [ConteudoMateriaController::class, 'update'])->name('updateConteudo');
+    Route::get('/{idConteudoMateria}/apagar', [ConteudoMateriaController::class, 'destroy']);
 });
 
 Route::middleware('auth')->group(function () {

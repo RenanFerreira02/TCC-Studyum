@@ -121,18 +121,16 @@
                         <div class="conteudo">
                             {!! $sc->conteudo !!}
                         </div>
-                        @endforeach
-
+                      
                         <div class="update-delete">
-                            @foreach($conteudoMateria as $sc)
                             <div class="update">
-                                <a href="/materias/{{ $sc->idMateriaSerie }}/{{ $sc->idConteudoMateria }}/editar">
+                                <a href="/materias/{{$sc->idMateriaSerie}}/{{$sc->id}}/editar">
                                     <i class='bx bxs-edit bx-md'></i>
                                 </a>
                             </div>
 
                             <div class="delete">
-                                <a href="">
+                                <a href="/{{$sc->id}}/apagar">
                                     <i class='bx bxs-trash bx-md' ></i>
                                 </a>
                             </div>

@@ -106,9 +106,10 @@
                         <h1>Editar Conteúdo</h1>
                     </div>
                 </div>
+                
 
                 <div class="form">
-                    <form action='/update/{{$conteudoEdit->idConteudoMateria}}' method="post">
+                    <form action='/{{$conteudoMateria->id}}/editar' method="post">
                         @csrf
                         @method('PUT')
                         
@@ -123,7 +124,7 @@
                                     type="text"
                                     id="titulo"
                                     name="titulo"
-                                    value="{{$conteudoEdit -> tituloConteudo}}"
+                                    value="{{$conteudoMateria->tituloConteudo}}"
                                     required
                                     />
                                 </div>
@@ -138,21 +139,19 @@
                                     id="materiaSerie"
                                     name="materiaSerie"
                                     >
-                                    
-                                    @foreach ($conteudo as $c)
+                                    @foreach($materiaSerie as $ms)
                                     <option
                                         class="input-label"
-                                        value="{{ $c->idMateriaSerie }}"
+                                        value="{{ $ms->idMateriaSerie }}"
                                     >
-                                        {{ $c->materia }} - {{ $c->serie }}
+                                        {{ $ms->materia }} - {{ $ms->serie }}
                                     </option>
-
                                     @endforeach
                                 </select>
                             </div>
                         </div>
 
-                        <textarea id="myeditorinstance" name="conteudo"> {{$conteudoEdit-> conteudo}} </textarea>
+                        <textarea id="myeditorinstance" name="conteudo"> {{$conteudoMateria->conteudo}} </textarea>
 
                         <input type="submit" value="Enviar conteúdo">
                     </form>
