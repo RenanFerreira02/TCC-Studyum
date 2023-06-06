@@ -9,6 +9,7 @@
             rel="stylesheet"
             href="{{url('css/login-register/register.css')}}"
         />
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
         <title>Cadastro</title>
     </head>
 
@@ -34,7 +35,7 @@
 
                     <h2>Cadastro</h2>
 
-                    <form action="{{ route('register') }}" method="post">
+                    <form action="{{ route('register') }}" method="post" id="cadastro">
                         @csrf
                         <div class="input-box">
                             <input
@@ -43,6 +44,8 @@
                                 placeholder="Nome"
                                 required
                             />
+
+                            <x-input-error :messages="$errors->get('name')" class="mt-2" />
                         </div>
 
                         <div class="input-box">
@@ -52,6 +55,8 @@
                                 placeholder="E-mail"
                                 required
                             />
+
+                            <x-input-error :messages="$errors->get('email')" class="mt-2" />
                         </div>
 
                         <div class="input-box">
@@ -61,6 +66,8 @@
                                 placeholder="Senha"
                                 required
                             />
+
+                            <x-input-error :messages="$errors->get('password')" class="mt-2" />
                         </div>
 
                         <div class="input-box">
@@ -69,6 +76,8 @@
                                 name="password_confirmation"
                                 placeholder="Confirme a senha"
                             />
+
+                            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
                         </div>
 
                         <div class="input-box">
@@ -93,4 +102,8 @@
             </div>
         </div>
     </body>
+    {{-- <script src="sweetalert2.min.js"></script>
+    <link rel="stylesheet" href="sweetalert2.min.css"> --}}
+
+    <script src="{{url('js/modais/cadastroModal.js')}}"></script>
 </html>

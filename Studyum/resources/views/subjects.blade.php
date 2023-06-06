@@ -88,11 +88,11 @@
                 </div>
 
                 <div class="right">
-                    <a href="#" class="notification">
+                    {{-- <a href="#" class="notification">
                         <i class="bx bxs-bell bx-tada-hover"></i>
 
                         <span class="num">8</span>
-                    </a>
+                    </a> --}}
 
                     <a href="/profile" class="profile">
                         <img src="{{ url('images/templates/Avatar.svg') }}" />
@@ -111,20 +111,21 @@
                     <div class="content2">
                         @foreach ($materias_series as $ms)
                         <h1 class="serie">{{ $ms->serie }}</h1>
+                        
                         <div class="cards">
                             @foreach ($ms->materias as $materia)
-                            <div class="card">
-                                <div class="box" label="materia">
-                                    <a href="/materias/{{ $materia->idMateriaSerie }}">
+                            <a href="/materias/{{ $materia->idMateriaSerie }}">
+                                <button class="card" type="submit">
+                                    <div class="box" label="materia">
                                         <div class="nomeMateria">
                                             {{--
                                             <p>{{$materia-> idMateriaSerie}}</p>
                                             --}}
                                             <p>{{ $materia->materia }}</p>
                                         </div>
-                                    </a>
-                                </div>
-                            </div>
+                                    </div>
+                                </button>
+                            </a>
                             @endforeach
                         </div>
                         @endforeach
@@ -133,9 +134,7 @@
             </main>
         </section>
 
-        <section id="content" class="container2">
-            
-        </section>
+        <section id="content" class="container2"></section>
         <script src="{{ url('scripts/dashboard/sidebar.js') }}"></script>
     </body>
 </html>

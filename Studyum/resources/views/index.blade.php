@@ -163,7 +163,7 @@
                             <br />
 
                             <p>
-                                Nenhume caminho é longo demais quando a educação
+                                Nenhum caminho é longo demais quando a educação
                                 nos acompanha.
                             </p>
                         </div>

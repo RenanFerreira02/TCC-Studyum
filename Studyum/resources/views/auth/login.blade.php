@@ -43,6 +43,8 @@
                                 name="email"
                                 placeholder="E-mail"
                             />
+
+                            <x-input-error :messages="$errors->get('email')" class="mt-2" />
                         </div>
 
                         <div class="input-box">
@@ -51,6 +53,8 @@
                                 name="password"
                                 placeholder="Senha"
                             />
+
+                            <x-input-error :messages="$errors->get('password')" class="mt-2" />
                         </div>
 
                         <div class="remember">

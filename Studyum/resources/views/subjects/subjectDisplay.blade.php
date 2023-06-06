@@ -88,11 +88,11 @@
                 </div>
 
                 <div class="right">
-                    <a href="#" class="notification">
+                    {{-- <a href="#" class="notification">
                         <i class="bx bxs-bell bx-tada-hover"></i>
 
                         <span class="num">8</span>
-                    </a>
+                    </a> --}}
 
                     <a href="/profile" class="profile">
                         <img src="{{ url('images/templates/Avatar.svg') }}" />
@@ -116,28 +116,26 @@
             <div class="content2">
                 <div class="cards">
                     @foreach ($materiaSerie as $ms)
-                    <div class="card">
-                        <div class="box">
-                            <a
-                                href="/materias/{{ $ms->idMateriaSerie }}/{{ $ms->id }}"
-                            >
+                    <a href="/materias/{{ $ms->idMateriaSerie }}/{{ $ms->id }}">
+                        <button class="card">
+                            <div class="box">
                                 <div class="nomeMateria">
                                     <p>{{ $ms->tituloConteudo }}</p>
                                 </div>
-                            </a>
-                        </div>
-                    </div>
+                            </div>
+                        </button>
+                    </a>
                     @endforeach
 
-                    <div class="card">
-                        <div class="box">
-                            <a href="/adicionar">
+                    <a href="/adicionar">
+                        <button class="card">
+                            <div class="box">
                                 <div class="nomeMateria">
                                     <i class="bx bx-book-add bx-lg"></i>
                                 </div>
-                            </a>
-                        </div>
-                    </div>
+                            </div>
+                        </button>
+                    </a>
                 </div>
             </div>
         </section>
