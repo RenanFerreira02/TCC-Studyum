@@ -12,7 +12,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 280px;
+    width: 205px;
     height: 100%;
     background: var(--dark-blue);
     z-index: 2000;
@@ -33,7 +33,7 @@ body {
 
 #sidebar .side-menu {
     width: 100%;
-    margin-top: 90px;
+    margin-top: 200px;
 }
 
 #sidebar .side-menu li {
@@ -109,8 +109,8 @@ body {
 /* CONTENT */
 #content {
     position: relative;
-    width: calc(100% - 280px);
-    left: 280px;
+    width: calc(100% - 205px);
+    left: 205px;
     transition: 0.3s ease;
 }
 

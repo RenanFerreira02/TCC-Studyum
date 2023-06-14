@@ -200,7 +200,7 @@ body {
 #content main {
     width: 100%;
     padding: 36px 24px;
-    max-height: calc(100vh - 56px);
+    /* max-height: calc(100vh - 56px); */
     overflow-y: auto;
 }
 
@@ -210,6 +210,7 @@ body {
     justify-content: space-between;
     grid-gap: 16px;
     flex-wrap: wrap;
+    max-width: 70%;
 }
 
 #content main .head-title .left h1 {
@@ -235,7 +236,7 @@ body {
 .update-delete {
     margin-top: 2rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .update i {
