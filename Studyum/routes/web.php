@@ -39,21 +39,21 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/materias', [MateriaSerieController::class, 'subjectIndex'])->name('materias');
+    Route::get('/materias', [MateriaSerieController::class, 'subjectIndex'])->name('showMaterias');
 
-    Route::get('/materias/{idMateriaSerie}', [ConteudoMateriaController::class, 'conteudoMateria'])->name('conteudoMateria');
+    Route::get('/materias/{idMateriaSerie}', [ConteudoMateriaController::class, 'conteudoMateria'])->name('showConteudosMateria');
 
-    Route::get('/materias/{idMateriaSerie}/{idConteudoMateria}', [ConteudoMateriaController::class, 'conteudo'])->name('conteudo');
+    Route::get('/materias/{idMateriaSerie}/{idConteudoMateria}', [ConteudoMateriaController::class, 'conteudo'])->name('showConteudo');
 
-    Route::get('/adicionar', [ConteudoMateriaController::class, 'addConteudo'])->name('addConteudo');
+    Route::get('/{idMateriaSerie}/adicionar', [ConteudoMateriaController::class, 'addConteudo'])->name('inserirConteudo');
 
-    Route::post('insertConteudo', [ConteudoMateriaController::class, 'store']);
+    Route::post('/{idMateriaSerie}/adicionar', [ConteudoMateriaController::class, 'store'])->name('storeContent');
 
-    Route::get('/materias/{idMateriaSerie}/{idConteudoMateria}/editar', [ConteudoMateriaController::class, 'showEdit']);
+    Route::get('/materias/{idMateriaSerie}/{idConteudoMateria}/editar', [ConteudoMateriaController::class, 'showEdit'])->name('showEdicao');
 
-    Route::put('/{idConteudoMateria}/editar', [ConteudoMateriaController::class, 'update']);
+    Route::put('/{idConteudoMateria}/editar', [ConteudoMateriaController::class, 'update'])->name('updateContent');
 
-    Route::get('/{idConteudoMateria}/apagar', [ConteudoMateriaController::class, 'destroy']);
+    Route::get('/{idConteudoMateria}/apagar', [ConteudoMateriaController::class, 'destroy'])->name('deleteContent');
 });
 
 Route::middleware('auth')->group(function () {

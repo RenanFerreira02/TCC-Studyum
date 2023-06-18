@@ -110,7 +110,7 @@
                     </a>
                 @endforeach
 
-                <a href="/adicionar">
+                <a href="/{{ $materiaSerieAddContent->idMateriaSerie }}/adicionar">
                     <button class="card">
                         <div class="box">
                             <div class="nomeMateria">

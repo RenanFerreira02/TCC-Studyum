@@ -16,7 +16,9 @@
     <div class="container">
         <header class="header">
             <div class="logo">
-                <img src="{{ url('images/templates/logo.svg') }}" alt="" />
+                <a href="/">
+                    <img src="{{ url('images/templates/logo.svg') }}" alt="" />
+                </a>
             </div>
 
             <nav class="menu">
@@ -48,11 +50,9 @@
                     <div class="about-text">
                         <p>
                             O Studyum é uma projeto desenvolvido por alunos
-                            da ETEC Camargo Aranha afim de ajudar alunos e
-                            professores do ensino médio público brasileiro,
-                            pensando em como os alunos podem evoluir na
-                            forma de aprender e os professores evoluírem na
-                            forma de ensinar.
+                            da ETEC Camargo Aranha afim de ajudar alunos,
+                            pensando em como podem evoluir na
+                            forma de aprender e armazenar conteúdos de forma prática e intuitiva.
                         </p>
                     </div>
                 </div>
@@ -188,15 +188,15 @@
                         </div>
 
                         <div class="dev-contacts">
-                            <a href="">
+                            <a href="https://github.com/MinCoffee98">
                                 <img src="{{ url('images/icons/github-icon.svg') }}" alt="Github" />
                             </a>
 
-                            <a href="">
+                            <a href="https://www.instagram.com/cafeinapura98">
                                 <img src="{{ url('images/icons/instagram-icon.svg') }}" alt="Instagram" />
                             </a>
 
-                            <a href="">
+                            <a href="mailto:isabelavr58@gmail.com">
                                 <img src="{{ url('images/icons/email-icon.svg') }}" alt="E-mail" />
                             </a>
                         </div>

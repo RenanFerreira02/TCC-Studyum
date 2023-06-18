@@ -16,7 +16,9 @@
     <div class="container">
         <header class="header">
             <div class="logo">
-                <img src="{{ url('images/templates/logo.svg') }}" alt="" />
+                <a href="/">
+                    <img src="{{ url('images/templates/logo.svg') }}" alt="" />
+                </a>
             </div>
 
             <nav class="menu">
@@ -167,15 +169,15 @@
                         </div>
 
                         <div class="dev-contacts">
-                            <a href="">
+                            <a href="https://github.com/MinCoffee98">
                                 <img src="{{ url('images/icons/github-icon.svg') }}" alt="Github" />
                             </a>
 
-                            <a href="">
+                            <a href="https://www.instagram.com/cafeinapura98">
                                 <img src="{{ url('images/icons/instagram-icon.svg') }}" alt="Instagram" />
                             </a>
 
-                            <a href="">
+                            <a href="mailto:isabelavr58@gmail.com">
                                 <img src="{{ url('images/icons/email-icon.svg') }}" alt="E-mail" />
                             </a>
                         </div>

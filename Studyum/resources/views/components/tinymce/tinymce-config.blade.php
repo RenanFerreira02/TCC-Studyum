@@ -6,6 +6,7 @@
         toolbar: 'undo redo | blocks | forecolor | bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | table',
         language_url: 'js/tinymce/langs/pt_BR.js',
         language: 'pt_BR',
-        width: 1000,
+        width: 1150,
+        height: 450,
     });
 </script>

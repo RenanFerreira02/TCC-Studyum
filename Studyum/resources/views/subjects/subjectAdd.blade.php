@@ -97,7 +97,7 @@
             </div>
 
             <div class="form">
-                <form action="insertConteudo" method="post" id="insertContent">
+                <form action="/{{ $conteudoMateria->idMateriaSerie }}/adicionar" method="post" id="insertContent">
                     @csrf
                     <div class="cabecalho">
                         <div class="titulo">
@@ -126,7 +126,7 @@
 
                     <x-tinymce.tinymce-editor />
 
-                    <input type="submit" value="Enviar conteúdo" action='{{ __('Insert Conteudo') }}'>
+                    <input type="submit" value="Enviar conteúdo"'>
                 </form>
             </div>
         </main>

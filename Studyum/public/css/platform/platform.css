@@ -39,12 +39,11 @@ body {
 #sidebar .side-menu li {
     height: 48px;
     background: transparent;
-    padding: 4px;
 }
 
 #sidebar .side-menu li.active {
     position: relative;
-    border-left: 3px solid var(--light);
+    border-left: 3px solid var(--lighter-blue);
     transition: 0.3s ease;
 }
 
@@ -77,7 +76,7 @@ body {
     align-items: center;
     border-radius: 48px;
     font-size: 16px;
-    color: var(--dark);
+    color: var(--dark-grey);
     white-space: nowrap;
     overflow-x: hidden;
 }
@@ -199,7 +198,7 @@ body {
 /* MAIN */
 #content main {
     width: 100%;
-    padding: 36px 24px;
+    padding: 18px 24px;
     font-family: var(--font-title);
     max-height: calc(100vh - 56px);
     overflow-y: auto;

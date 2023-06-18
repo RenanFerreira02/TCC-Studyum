@@ -13,13 +13,15 @@ class ConteudoMateriaController extends Controller
         // Retrieve conteudo_materia based on idMateriaSerie
         $materiaSerie = ConteudoMateria::where('idMateriaSerie', '=', $id)->get();
 
+        $materiaSerieAddContent = ConteudoMateria::where('idMateriaSerie', '=', $id)->first();
+
         // Retrieve the nomeMateriaSerie for display
         $nomeMateriaSerie = MateriaSerie::ShowMateriaSerie()
         ->where('idMateriaSerie', '=', $id)
         ->first();
 
         // Pass the retrieved data to the view and render it
-        return view('subjects.subjectDisplay', ['materiaSerie' => $materiaSerie, 'nomeMateriaSerie' => $nomeMateriaSerie]);
+        return view('subjects.subjectDisplay', ['materiaSerie' => $materiaSerie, 'nomeMateriaSerie' => $nomeMateriaSerie, 'materiaSerieAddContent' => $materiaSerieAddContent]);
     }
 
     public function conteudo($idMateriaSerie, $idConteudoMateria)
@@ -38,10 +40,12 @@ class ConteudoMateriaController extends Controller
         return view('subjects.subjectContent', ['conteudoMateria' => $conteudoMateria, 'nomeMateriaSerie' => $nomeMateriaSerie]);
     }
 
-    public function addConteudo()
+    public function addConteudo($idMateriaSerie)
     {
 
-        $conteudoMateria = ConteudoMateria::ShowConteudo()->first();
+        $conteudoMateria = ConteudoMateria::ShowConteudo()
+            ->where('conteudo_materia.idMateriaSerie', '=', $idMateriaSerie)
+            ->first();
 
         // Retrieve all materia_serie for selection
         $conteudo = MateriaSerie::ShowMateriaSerie()->get();
@@ -59,8 +63,8 @@ class ConteudoMateriaController extends Controller
             'conteudo' => $request->conteudo,
         ]);
 
-        // Redirect to the '/materias' route
-        return redirect('/materias');
+        // Redirect to the 'showConteudoMateria' route
+        return redirect()->route('showConteudosMateria', ['idMateriaSerie' => $conteudo->idMateriaSerie]);
     }
 
     public function showEdit($idMateriaSerie, $idconteudoMateria)
@@ -93,7 +97,7 @@ class ConteudoMateriaController extends Controller
         $conteudo->save();
 
         // Redirect to the 'conteudo' route with the updated conteudo_materia's IDs
-        return redirect()->route('conteudo', ['idMateriaSerie' => $conteudoMateria->idMateriaSerie, 'idConteudoMateria' => $conteudoMateria->id]);
+        return redirect()->route('showConteudo', ['idMateriaSerie' => $conteudoMateria->idMateriaSerie, 'idConteudoMateria' => $conteudoMateria->id]);
     }
 
     public function destroy($idconteudoMateria)
@@ -108,6 +112,6 @@ class ConteudoMateriaController extends Controller
         $conteudo->delete();
 
         // Redirect to the 'conteudoMateria' route with the remaining materia_serie's ID
-        return redirect()->route('conteudoMateria', ['idMateriaSerie' => $conteudoMateria->idMateriaSerie]);
+        return redirect()->route('showConteudosMateria', ['idMateriaSerie' => $conteudoMateria->idMateriaSerie]);
     }
 }
