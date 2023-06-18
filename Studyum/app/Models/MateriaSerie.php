@@ -10,18 +10,22 @@ class MateriaSerie extends Model
 {
     use HasFactory;
 
+    // Specifies the database table name
     protected $table = 'materia_serie';
 
+
+    // Define a query scope to show the related subject
     public function scopeShowMateria(Builder $query): void
     {
         $query
-            ->join('materias', 'materia_serie.idMateria', '=', 'materias.idMateria');
+            ->join('materias', 'materia_serie.idMateria', '=', 'materias.idMateria'); // Joins the 'materias' table
     }
 
+    // Define a query scope to show the related subject and grade
     public function scopeShowMateriaSerie(Builder $query): void
     {
         $query
-            ->join('materias', 'materia_serie.idMateria', '=', 'materias.idMateria')
-            ->join('series', 'materia_serie.idSerie', '=', 'series.idSerie');
+            ->join('materias', 'materia_serie.idMateria', '=', 'materias.idMateria') // Joins the 'materias' table
+            ->join('series', 'materia_serie.idSerie', '=', 'series.idSerie'); // Joins the 'series' table
     }
 }

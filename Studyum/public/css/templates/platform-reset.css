@@ -21,36 +21,15 @@
 }
 
 /* Remove a margem e o preenchimento padrão */
-* {
+#sidebar ul,
+#sidebar li,
+nav,
+body {
     margin: 0;
     padding: 0;
-}
-
-/* Remove a formatação padrão da lista */
-ul,
-ol {
-    list-style: none;
 }
 
 /* Remove a decoração de link padrão */
 a {
     text-decoration: none;
-}
-
-/* Estilo principal */
-
-body {
-    margin: 0 auto;
-}
-
-.container {
-    margin: 0 auto;
-}
-
-.waves {
-    overflow: hidden;
-}
-
-.waves img {
-    filter: drop-shadow(0px 4px 4px #999);
 }

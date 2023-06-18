@@ -10,6 +10,7 @@ class Series extends Model
 {
     use HasFactory;
 
+    // Specifies the database table name
     protected $table = 'series';
 
 }

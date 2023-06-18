@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Materias extends Model
 {
     use HasFactory;
-
+    
+     // Specifies the database table name
     protected $table = 'materias';
 }

@@ -10,17 +10,21 @@ class ConteudoMateria extends Model
 {
     use HasFactory;
 
-    protected $table = 'conteudo_materia';
+    // Specifies the database table name
+    protected $table = 'conteudo_materia'; 
 
-    protected $fillable = ['idMateriaSerie', 'tituloConteudo', 'conteudo'];
+     // Specifies the mass assignable attributes
+    protected $fillable = ['id', 'idMateriaSerie', 'tituloConteudo', 'conteudo'];
 
-    public $timestamps = false;
+    // Disables the automatic timestamps management
+    public $timestamps = false; 
 
+    // Define a query scope to show the related content
     public function scopeShowConteudo(Builder $query): void
     {
         $query
-            ->join('materia_serie', 'conteudo_materia.idMateriaSerie', '=', 'materia_serie.idMateriaSerie')
-            ->join('materias', 'materias.idMateria', '=', 'materia_serie.idMateria')
-            ->join('series', 'series.idSerie', '=', 'materia_serie.idSerie');
+            ->join('materia_serie', 'conteudo_materia.idMateriaSerie', '=', 'materia_serie.idMateriaSerie') // Joins the 'materia_serie' table
+            ->join('materias', 'materias.idMateria', '=', 'materia_serie.idMateria') // Joins the 'materias' table
+            ->join('series', 'series.idSerie', '=', 'materia_serie.idSerie'); // Joins the 'series' table
     }
 }

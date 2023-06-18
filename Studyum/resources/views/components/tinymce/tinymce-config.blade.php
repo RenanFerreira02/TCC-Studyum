@@ -3,9 +3,10 @@
     tinymce.init({
         selector: 'textarea#myeditorinstance', // Replace this CSS selector to match the placeholder element for TinyMCE
         plugins: 'code table lists',
-        toolbar: 'undo redo | blocks | bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | code | table',
+        toolbar: 'undo redo | blocks | forecolor | bold italic | alignleft aligncenter alignright | indent outdent | bullist numlist | table',
         language_url: 'js/tinymce/langs/pt_BR.js',
         language: 'pt_BR',
-        width: 700,
+        width: 1150,
+        height: 450,
     });
 </script>

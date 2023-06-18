@@ -1,34 +1,23 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Boxicons -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="{{ url('css/platform/platform.css') }}" />
-    <link rel="stylesheet" href="{{ url('css/platform/dashboard.css') }}" />
+    <link rel="stylesheet" href="{{ url('css/platform/subjects.css') }}" />
     <link rel="stylesheet" href="{{ url('css/templates/css-reset.css') }}" />
-    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.15.5/dist/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Editar Conteúdo</title>
 </head>
 
 <body>
-    <!-- SIDEBAR -->
     <section id="sidebar">
-
-        <div class="logo">
-            <img src="{{ url('images/templates/Logo.svg') }}" alt="" style="width: 80%">
-        </div>
         <ul class="side-menu top">
             <li class="active">
-                <a href="/dashboard">
-                    <i class="bx bxs-dashboard bx-sm"></i>
-
-                    <span class="text">Dashboard</span>
-                </a>
-            </li>
-
-            <li>
                 <a href="/materias">
                     <i class="bx bx-book-open bx-sm"></i>
 
@@ -76,11 +65,8 @@
             </li>
         </ul>
     </section>
-    <!-- SIDEBAR -->
 
-    <!-- CONTENT -->
     <section id="content">
-        <!-- NAVBAR -->
         <nav>
             <div class="left">
                 <i class="bx bx-menu bx-sm"></i>
@@ -100,44 +86,57 @@
                 </a>
             </div>
         </nav>
-        <!-- NAVBAR -->
 
-        <!-- MAIN -->
         <main>
             <div class="head-title">
                 <div class="left">
-                    <h1>Dashboard</h1>
+                    <h1>Editar Conteúdo</h1>
                 </div>
             </div>
 
-            <div class="content-test">
-                <p>
-                    Parabéns, você chegou ao fim do teste! <br />
-                    <br />
-                    Obrigado por fazer parte do primeiro teste da plataforma
-                    Studyum, nosso time agradeçe pela sua disponiblidade e
-                    pela atenção. <br />
-                    <br />
-                    Sinta-se livre para explorar essa parte da plataforma
-                    que ainda está sendo construída, teste os botões e
-                    atente-se a detalhes, caso possua alguma sugestão, você
-                    poderá escrever no formulário. <br />
-                    <br />
-                    Não se preocupe com as informações que foram fornecidas
-                    para cadastro e login, nosso banco de dados será apagado
-                    e suas informações serão excluídas.
-                </p>
 
-                <a href="https://forms.gle/AoVrpkAvk3emrz6VA" target="_blank">
-                    Formulário de feedback
-                </a>
+            <div class="form">
+                <form action='/{{ $conteudoMateria->id }}/editar' method="post" id="editContent">
+                    @csrf
+                    @method('PUT')
+
+                    <div class="cabecalho">
+                        <div class="titulo">
+                            <label class="input-label" for="titulo">
+                                Título do conteúdo:
+                            </label>
+
+                            <input class="input-box" type="text" id="titulo" name="titulo"
+                                value="{{ $conteudoMateria->tituloConteudo }}" required />
+                        </div>
+
+                        <div class="materiaSerie">
+                            <label class="input-label" for="materiaSerie">
+                                Matéria/Série:
+                            </label>
+
+                            <select class="input-box" id="materiaSerie" name="materiaSerie">
+                                @foreach ($materiaSerie as $ms)
+                                    <option class="input-label" value="{{ $ms->idMateriaSerie }}"
+                                        {{ $ms->idMateriaSerie == $conteudoMateria->idMateriaSerie ? 'Selected' : '' }}>
+                                        {{ $ms->materia }} - {{ $ms->serie }}
+                                    </option>
+                                @endforeach
+                            </select>
+                        </div>
+                    </div>
+
+                    <textarea id="myeditorinstance" name="conteudo"> {{ $conteudoMateria->conteudo }} </textarea>
+
+                    <input type="submit" value="Enviar conteúdo">
+                </form>
             </div>
         </main>
-        <!-- MAIN -->
     </section>
-    <!-- CONTENT -->
 
     <script src="{{ url('scripts/dashboard/sidebar.js') }}"></script>
+    <x-tinymce.tinymce-config />
+    <script src="{{ url('scripts/modals/editModal.js') }}"></script>
 </body>
 
 </html>
