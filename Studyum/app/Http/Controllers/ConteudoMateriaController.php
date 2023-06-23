@@ -13,15 +13,13 @@ class ConteudoMateriaController extends Controller
         // Retrieve conteudo_materia based on idMateriaSerie
         $materiaSerie = ConteudoMateria::where('idMateriaSerie', '=', $id)->get();
 
-        $materiaSerieAddContent = ConteudoMateria::where('idMateriaSerie', '=', $id)->first();
-
         // Retrieve the nomeMateriaSerie for display
         $nomeMateriaSerie = MateriaSerie::ShowMateriaSerie()
         ->where('idMateriaSerie', '=', $id)
         ->first();
 
         // Pass the retrieved data to the view and render it
-        return view('subjects.subjectDisplay', ['materiaSerie' => $materiaSerie, 'nomeMateriaSerie' => $nomeMateriaSerie, 'materiaSerieAddContent' => $materiaSerieAddContent]);
+        return view('subjects.subjectDisplay', ['materiaSerie' => $materiaSerie, 'nomeMateriaSerie' => $nomeMateriaSerie]);
     }
 
     public function conteudo($idMateriaSerie, $idConteudoMateria)
@@ -42,9 +40,9 @@ class ConteudoMateriaController extends Controller
 
     public function addConteudo($idMateriaSerie)
     {
-
-        $conteudoMateria = ConteudoMateria::ShowConteudo()
-            ->where('conteudo_materia.idMateriaSerie', '=', $idMateriaSerie)
+        // retrieve the id from MateriaSerie model for the input spaces
+        $conteudoMateria = MateriaSerie::ShowMateriaSerie()
+            ->where('idMateriaSerie', '=', $idMateriaSerie)
             ->first();
 
         // Retrieve all materia_serie for selection

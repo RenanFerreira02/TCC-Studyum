@@ -24,19 +24,18 @@ Route::get('/sobre', function () {
     return view('about');
 });
 
-Route::get('/forum', function () {
-    return view('forum');
-});
-
-Route::get('/tarefas', function () {
-    return view('tasklist');
-});
-
-
-
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::get('/forum', function () {
+    return view('forum');
+})->middleware(['auth', 'verified'])->name('forum');
+
+Route::get('/tarefas', function () {
+    return view('tasklist');
+})->middleware(['auth', 'verified'])->name('tarefas');
+
 
 Route::middleware('auth')->group(function () {
     Route::get('/materias', [MateriaSerieController::class, 'subjectIndex'])->name('showMaterias');
